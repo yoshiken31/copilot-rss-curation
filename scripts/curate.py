@@ -577,11 +577,19 @@ def main():
                 usage_log = json.load(f)
         else:
             usage_log = []
-        usage_log.append({
+        entry = {
             "date": now.astimezone(timezone(timedelta(hours=9))).strftime("%Y-%m-%d"),
             "calls": gemini.calls,
             "aborted": aborted,
-        })
+            "published": len(items),
+        }
+        # 同じ日付（JST）のエントリは上書きし、1日1行にする
+        for i, row in enumerate(usage_log):
+            if row.get("date") == entry["date"]:
+                usage_log[i] = entry
+                break
+        else:
+            usage_log.append(entry)
         with open(usage_log_path, "w", encoding="utf-8") as f:
             json.dump(usage_log, f, ensure_ascii=False, indent=2)
         log.info("使用量ログ記録: %d回", gemini.calls)
