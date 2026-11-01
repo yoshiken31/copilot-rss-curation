@@ -1,0 +1,20 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "stage1_batch_size": 25,
+  "stage1_threshold": 3,
+  "final_threshold": 4,
+  "first_run_days": 3,
+  "feed_retention_days": 60,
+  "seen_retention_days": 120,
+  "max_items_per_run": 400,
+  "max_api_calls_per_run": 100,
+  "min_seconds_between_calls": 13,
+  "retry_wait_seconds": 60,
+  "max_retries": 3,
+  "fetch_timeout_seconds": 10,
+  "fetch_max_bytes": 600000,
+  "body_max_chars": 8000,
+  "feed_title": "GitHub Copilot活用 実践事例（選別）",
+  "feed_description": "InoreaderのGitHub Copilot関連記事をGeminiで選別し、コメントを付けたフィード",
+  "feed_link": "https://yoshiken31.github.io/copilot-rss-curation/"
+}

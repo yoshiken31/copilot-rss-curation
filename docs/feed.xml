@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>GitHub Copilot活用 実践事例（選別）</title>
+    <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+    <description>InoreaderのGitHub Copilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
+    <language>ja</language>
+  </channel>
+</rss>
