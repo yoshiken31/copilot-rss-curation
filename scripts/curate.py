@@ -568,6 +568,25 @@ def main():
     SEEN_PATH.write_text(json.dumps(seen, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
                          encoding="utf-8")
     log.info("フィード総件数: %d件", len(items))
+
+    # Gemini使用量をログに記録
+    usage_log_path = SEEN_PATH.parent / "usage_log.json"
+    try:
+        if usage_log_path.exists():
+            with open(usage_log_path, encoding="utf-8") as f:
+                usage_log = json.load(f)
+        else:
+            usage_log = []
+        usage_log.append({
+            "date": now.astimezone(timezone(timedelta(hours=9))).strftime("%Y-%m-%d"),
+            "calls": gemini.calls,
+            "aborted": aborted,
+        })
+        with open(usage_log_path, "w", encoding="utf-8") as f:
+            json.dump(usage_log, f, ensure_ascii=False, indent=2)
+        log.info("使用量ログ記録: %d回", gemini.calls)
+    except Exception as e:
+        log.warning("使用量ログ記録失敗: %s", e)
     return 0
 
 
