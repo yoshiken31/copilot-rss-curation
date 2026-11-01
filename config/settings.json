@@ -14,7 +14,7 @@
   "fetch_timeout_seconds": 10,
   "fetch_max_bytes": 600000,
   "body_max_chars": 8000,
-  "feed_title": "GitHub Copilot活用 実践事例（選別）",
-  "feed_description": "InoreaderのGitHub Copilot関連記事をGeminiで選別し、コメントを付けたフィード",
+  "feed_title": "Microsoft Copilot 活用事例（選別）",
+  "feed_description": "InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード",
   "feed_link": "https://yoshiken31.github.io/copilot-rss-curation/"
 }
