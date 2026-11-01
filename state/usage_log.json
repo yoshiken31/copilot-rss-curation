@@ -1,7 +1,9 @@
 [
   {
     "date": "2026-11-02",
-    "calls": 2,
+    "input": 0,
+    "accepted": 0,
+    "calls": 0,
     "aborted": false
   }
 ]
