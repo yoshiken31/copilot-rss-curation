@@ -561,8 +561,20 @@ def main():
     seen["initialized"] = True
     prune_seen(seen, now, settings["seen_retention_days"])
 
+    # 完了報告エントリ（feed.xmlにだけ載せ、seen.jsonには記録しない）
+    jst = now.astimezone(timezone(timedelta(hours=9)))
+    report = {
+        "title": f"【完了報告】{jst.strftime('%Y.%m.%d %H:%M')}　"
+                 f"チェック{len(articles)}件、通過{len(accepted)}件、リクエスト{gemini.calls}回",
+        "link": settings["feed_link"],
+        "guid": settings["feed_link"] + "#report-" + now.strftime("%Y%m%dT%H%M%SZ"),
+        "pubDate": format_datetime(now),
+        "description": "<p>Gemini選別の実行結果です。</p>",
+        "category": "完了報告",
+    }
+
     existing = [] if reeval else load_feed_items(FEED_PATH)
-    items = merge_items(existing, [article_to_item(a, now) for a in accepted],
+    items = merge_items(existing, [article_to_item(a, now) for a in accepted] + [report],
                         now, settings["feed_retention_days"])
     FEED_PATH.write_bytes(build_feed(items, settings, now))
     SEEN_PATH.write_text(json.dumps(seen, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
@@ -578,10 +590,11 @@ def main():
         else:
             usage_log = []
         entry = {
-            "date": now.astimezone(timezone(timedelta(hours=9))).strftime("%Y-%m-%d"),
+            "date": jst.strftime("%Y-%m-%d"),
+            "input": len(articles),
+            "accepted": len(accepted),
             "calls": gemini.calls,
             "aborted": aborted,
-            "published": len(items),
         }
         # 同じ日付（JST）のエントリは上書きし、1日1行にする
         for i, row in enumerate(usage_log):
