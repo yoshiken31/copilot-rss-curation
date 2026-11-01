@@ -1,9 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
-    <title>GitHub Copilot活用 実践事例（選別）</title>
+    <title>Microsoft Copilot 活用事例（選別）</title>
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
-    <description>InoreaderのGitHub Copilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
+    <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
+    <lastBuildDate>Sun, 01 Nov 2026 11:52:52 +0000</lastBuildDate>
+    <item>
+      <title>⚙️ Microsoft 365 CoworkからOracle Autonomous AI Databaseを参照させる</title>
+      <link>https://qiita.com/ymaejima/items/4c15fe3e460c69a02a8b</link>
+      <guid isPermaLink="true">https://qiita.com/ymaejima/items/4c15fe3e460c69a02a8b</guid>
+      <pubDate>Sun, 01 Nov 2026 11:52:52 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365からOracleデータベースのデータを参照させる手順と設定例がわかるため、システム連携を検討する場面で役立ちます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;Oracle Autonomous DatabaseのデータをMicrosoft 365 Copilot Coworkから参照する ― Select AI AgentとMCPの連携 1. 目的 Microsoft 365 Copilot Coworkから、Oracle ...&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
