@@ -5,7 +5,39 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2026 02:29:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 09:49:32 +0000</lastBuildDate>
+    <item>
+      <title>⚙️ Copilotが使われない4つの理由、相談を重ねて見えてきたこと</title>
+      <link>https://qiita.com/Sidejob/items/eb5582b5427ed1fef767</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/eb5582b5427ed1fef767</guid>
+      <pubDate>Tue, 03 Nov 2026 09:49:32 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 Copilotの社内展開で躓く4つの理由と、業務を絞るアプローチやプロンプトの型の共有方法がわかり、導入初期のチームで活用できる。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;この記事で分かること： 「Copilotを入れたが誰も使っていない」相談で共通していた4つのパターン 使われ始めたチームと止まったままのチームで違った「最初の1手」 今すぐ試せる「業務を1つに絞る」アプローチの具体的な手順 会議の議事録をCopilotに作らせてみた...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ BeyontがNTTドコモの資格挑戦支援施策にAIエージェントを構築し業務改善を実現 - VOIX</title>
+      <link>https://voix.jp/business-cards/beyont-ai-agent-development-docomo</link>
+      <guid isPermaLink="true">https://voix.jp/business-cards/beyont-ai-agent-development-docomo</guid>
+      <pubDate>Tue, 03 Nov 2026 09:49:32 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioを活用して人事の問い合わせ対応業務を効率化した事例であり、社内ボットの導入や運用設計の参考に使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: voix.jp&lt;/p&gt;&lt;p&gt;Microsoft Copilot Studio を活用し、問い合わせ軽減を目指す。 全社展開を進め、業務効率化とスキル向上を支援する。 ▷年会費無料の法人向けクレジット ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Beyont、NTTドコモの「資格挑戦支援施策 問い合わせAIエージェント」を2ヶ月で構築 - PR TIMES</title>
+      <link>https://prtimes.jp/main/html/rd/p/000000220.000035215.html</link>
+      <guid isPermaLink="true">https://prtimes.jp/main/html/rd/p/000000220.000035215.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:49:32 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioを活用した社内問い合わせAIエージェントの構築手順と、FAQフォーマット設計や運用ノウハウがわかるため、人事や総務部門の問い合わせ対応自動化の検討時に役立ちます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: prtimes.jp&lt;/p&gt;&lt;p&gt;さらに、 Copilot Studio 活用のレクチャー、AIが読み取りやすいFAQフォーマットの設計、データ更新などの運用設計までを支援しました。 □本プロジェクトが ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【完了報告】2026.11.03 18:49　チェック17件、通過3件、リクエスト7回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261103T094932Z</guid>
+      <pubDate>Tue, 03 Nov 2026 09:49:32 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.03 11:29　チェック2件、通過0件、リクエスト1回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
