@@ -5,7 +5,31 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2026 09:49:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:44:01 +0000</lastBuildDate>
+    <item>
+      <title>📱⚙️ Copilot StudioのSharePoint連携で詰まりやすい3か所と確認手順</title>
+      <link>https://qiita.com/Sidejob/items/9e3d8e6c7036e5aa9bb9</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/9e3d8e6c7036e5aa9bb9</guid>
+      <pubDate>Wed, 04 Nov 2026 00:44:01 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot StudioとSharePoint連携時の権限エラーにおける3つの確認箇所と設定手順がわかり、社内ボット構築時のトラブルシューティングに使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに Copilot Studioで社内ボットを作り、SharePointのデータを参照させようとすると、権限まわりの設定でつまずくケースが多い。 「接続テストは通る、でも実際の応答でエラーになる」「管理者に承認してもらったはずなのに動かない」という状態で止まりやすい...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️📝 メール返信をAIに任せたい。Outlook × Copilotで社内ナレッジ付き下書きを自動生成する</title>
+      <link>https://zenn.dev/dx_workhack/articles/643081f86c809d</link>
+      <guid isPermaLink="true">https://zenn.dev/dx_workhack/articles/643081f86c809d</guid>
+      <pubDate>Wed, 04 Nov 2026 00:44:01 +0000</pubDate>
+      <category>DX業務自動化／MDファイル運用</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; OutlookのCopilotチャット（Workモード）で社内ナレッジを引用した返信メールの下書きを作成する手順とプロンプトの工夫がわかり、社内問い合わせ対応の効率化に使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化・MDファイル運用 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;はじめに 日々の業務の中で地味に神経と時間をすり減らすのが、顧客や社外からの「問い合わせメールへの返信対応」だ。ある程度定型化されているとはいえ、自社サービスの細かい仕様や過去の経緯を考慮する必要があり、絶対この辺りAI活用余地があると考えていた。 そこでいくつか自動化の道を模索しては壁にぶつかってきた。 構築済みBot（Copilot Studio）を使う方法： 前回の記事（【M365】Power Automate×Copilot Studioのナレッジ参照でDLPエラーが出た）で検証した通り、自動化の途中でブロックされてしまい実用に至らず。 AI Builderを使う方法： Po...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【完了報告】2026.11.04 09:44　チェック11件、通過2件、リクエスト4回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261104T004401Z</guid>
+      <pubDate>Wed, 04 Nov 2026 00:44:01 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>⚙️ Copilotが使われない4つの理由、相談を重ねて見えてきたこと</title>
       <link>https://qiita.com/Sidejob/items/eb5582b5427ed1fef767</link>
