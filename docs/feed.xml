@@ -5,7 +5,47 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:44:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:57:06 +0000</lastBuildDate>
+    <item>
+      <title>⚙️ 【Microsoft Copilot】「上限に達しました」は障害？Copilot Chatのフェアユース制限と社内案内の作り方</title>
+      <link>https://qiita.com/phamxuanquyen22/items/0e21dc981485c6535614</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/0e21dc981485c6535614</guid>
+      <pubDate>Thu, 05 Nov 2026 00:57:06 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 Copilotの利用制限に関する問い合わせ対応の切り分け手順と社内FAQ例が分かり、情シス・ヘルプデスク部門の運用管理に活用できる。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月5日時点の情報です。Cowork は更新が速い機能のため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. 「Copilotが使えません」だけでは、原因は分からない 「昨日は使えたのに、今日は使えない」 「一部の...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automateで自動投稿フローが止まりやすい3パターンと確認手順</title>
+      <link>https://qiita.com/Sidejob/items/1b6395cd44664b8d0497</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/1b6395cd44664b8d0497</guid>
+      <pubDate>Thu, 05 Nov 2026 00:57:06 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power Automateの自動投稿フローが停止する3つの原因とそれぞれの確認・対処手順が分かり、自動化の運用保守やトラブルシューティングの場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに Power Automateでブログやnoteへの自動投稿フローを作り、しばらく動かしていると、気づいたら止まっていることがある。 「設定は変えていないのに動かない」という状態になりやすい3パターンと、それぞれの確認手順を整理した。 この記事は、ブログやSNSへ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ 【Microsoft Copilot】外部接続は「検索だけ」とは限らない――MCPコネクタの権限・承認・公開範囲を整理する</title>
+      <link>https://qiita.com/phamxuanquyen22/items/7d995b7f053fe1abb4cd</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/7d995b7f053fe1abb4cd</guid>
+      <pubDate>Thu, 05 Nov 2026 00:57:06 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; MCPコネクタの権限管理や承認設定の確認手順が示されており、Microsoft 365 Copilotのセキュリティ設定や運用管理の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月4日時点の情報です。Cowork は更新が速い機能のため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. 「接続を許可する」の前に、何ができる接続かを確認する 「外部の業務システムをCopilotにつなげて、情...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ OutlookのCopilot、下書きとチャットをどう使い分ける？参照範囲・ライセンス・送信前確認</title>
+      <link>https://qiita.com/phamxuanquyen22/items/0f27678e3d7bf79d3623</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/0f27678e3d7bf79d3623</guid>
+      <pubDate>Thu, 05 Nov 2026 00:57:06 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; OutlookのCopilotで下書き機能とチャットを使い分け、根拠を確認して返信を作成する手順がわかる。Microsoft 365 Copilotをメール業務に導入する際に活用できる。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月4日時点の情報です。Cowork は更新が速い機能のため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 「お問い合わせへの返信を書いて」とCopilotに頼むと、読みやすい文章はすぐに出てきます。 ただ、技術的な問い...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【完了報告】2026.11.05 09:57　チェック11件、通過4件、リクエスト5回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261105T005706Z</guid>
+      <pubDate>Thu, 05 Nov 2026 00:57:06 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>📱⚙️ Copilot StudioのSharePoint連携で詰まりやすい3か所と確認手順</title>
       <link>https://qiita.com/Sidejob/items/9e3d8e6c7036e5aa9bb9</link>
