@@ -5,7 +5,23 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 01:00:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 09:38:14 +0000</lastBuildDate>
+    <item>
+      <title>📱⚙️ Copilot Studioエージェントの自律実行、どこまで任せるか——設計で使った4つの判断軸と限界</title>
+      <link>https://zenn.dev/sidejob/articles/a08ea36f840d72726</link>
+      <guid isPermaLink="true">https://zenn.dev/sidejob/articles/a08ea36f840d72726</guid>
+      <pubDate>Fri, 06 Nov 2026 09:38:14 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioのエージェントにおける自律実行の4つの判断軸と実装パターンがわかり、業務自動化の設計時に使える。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;企業でCopilot Studioを使ったエージェントを18件展開する中で、毎回同じ問いにぶつかった。「このステップは人間が確認するべきか、エージェントに任せていいか。」 これを感覚で決めていると、2パターンの問題が起きる。「承認なしでメールが送られた」という事故か、「全ステップに承認を入れたら手動より時間がかかるようになった」という本末転倒か。どちらも実際に遭遇した。 この記事では、自律度（どこまでエージェントに判断させるか）を決めるときに使っている判断軸と、その限界を書く。完成した答えではなく、今の自分の整理だ。 この記事の前提 対象のツールはMicrosoft Copilot ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【完了報告】2026.11.06 18:38　チェック12件、通過1件、リクエスト2回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261106T093814Z</guid>
+      <pubDate>Fri, 06 Nov 2026 09:38:14 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.06 10:00　チェック5件、通過0件、リクエスト1回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/</link>

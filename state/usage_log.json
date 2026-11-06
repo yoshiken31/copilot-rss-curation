@@ -29,9 +29,9 @@
   },
   {
     "date": "2026-11-06",
-    "input": 5,
-    "accepted": 0,
-    "calls": 1,
+    "input": 12,
+    "accepted": 1,
+    "calls": 2,
     "aborted": false
   }
 ]
