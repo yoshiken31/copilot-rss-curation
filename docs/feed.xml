@@ -5,7 +5,15 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 09:44:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:00:35 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.06 10:00　チェック5件、通過0件、リクエスト1回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261106T010035Z</guid>
+      <pubDate>Fri, 06 Nov 2026 01:00:35 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>📝📱 M365 Copilot Agent BuilderにSKILL.mdを登録してみた</title>
       <link>https://qiita.com/rhaya/items/2ea7620235c7199db852</link>
