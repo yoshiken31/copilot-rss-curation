@@ -7,7 +7,7 @@ Gemini無料枠とGitHub無料枠だけで動き、Claudeの使用量・課金�
 フィード: https://yoshiken31.github.io/claude-rss-curation/feed.xml
 
 ## 仕組み
-1. 毎日 05:00 JST（cron `0 20 * * *` UTC）に GitHub Actions が `scripts/curate.py` を実行します。手動実行は Actions の `curate` → Run workflow です。
+1. 実行は Google Apps Script（プロジェクト名 `curate-trigger`）から GitHub API の `workflow_dispatch` で頼みます。時刻は毎日 2〜3時台と10〜11時台（JST）に Claude版、その30分後に Copilot版です。GitHub の定期実行（schedule）は4〜7時間遅れるため使わず、同じ Gemini の鍵を使うので Copilot版は30分ずらしています。`scripts/curate.py` が動き、手動実行は Actions の `curate` → Run workflow からもできます。
 2. Secret `INOREADER_FEED_URL` のRSSを取得します。処理済み・重複（同じ元URL、ほぼ同じタイトル）を除きます。Googleアラートの中継URLは元記事のURLに変換します。
 3. 初回は直近3日分だけが対象で、それより古い記事は処理済み扱いで取り込みません。
 4. 1次選別: 25件ずつまとめてGeminiに渡し、分野・実践事例か・1〜5点を判定します。
@@ -51,3 +51,4 @@ Gemini無料枠とGitHub無料枠だけで動き、Claudeの使用量・課金�
 - 2026-11-07：取得上限を100件から300件（`fetch_limit`）に引き上げ。完了報告のタイトルに「新規N件」（上限に達したら「（上限超）」）、本文に取得・処理済み・新規・上限・スキップの件数を追加。上限を上げた初回に古い記事がまとめて配信されないよう、通常実行では処理済みの一番古い記事より古い未処理記事を判定せず処理済みにする（再評価モードでは行わない）。
 - 2026-11-07：Geminiの上限などで途中で止まり、判定できずに翌日へ回した記事を `state/pending.json`（保留リスト）に記録するようにした。古い未処理記事のスキップでは保留中の記事を対象から外して通常どおり判定し、判定が済んだら保留から消す。完了報告の本文に「保留から判定した件数」「残っている保留件数」を追加。
 - 2026-11-07：保留リストに、判定に使う項目（タイトル・要約・情報元・日付）もいっしょに保存するようにした。保留にした記事がInoreaderの取得結果（最新`fetch_limit`件）から押し出されても、保存した情報で判定される（取得結果にも同じ記事があれば取得結果の情報を使う）。URL・タイトルだけの古い形式の保留は、取得結果に出たときに判定され、その回に新形式へ更新される。
+- 2026-11-07：GitHub の定期実行（schedule）が4〜7時間遅れ、GASからの手動実行と重なって同じ Gemini の鍵を同時に使ってしまうため、`curate.yml` から schedule（cron）を削除し、実行のきっかけを GAS（`curate-trigger`）からの `workflow_dispatch` だけにした。

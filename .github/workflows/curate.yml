@@ -1,9 +1,6 @@
 name: curate
 
 on:
-  schedule:
-    - cron: "30 20 * * *"   # 毎日 05:30 JST
-    - cron: "30 2 * * *"   # 毎日 11:30 JST
   workflow_dispatch:
     inputs:
       reevaluate_days:
