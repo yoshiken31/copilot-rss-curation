@@ -5,7 +5,31 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 04:40:17 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 04:52:50 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.07 13:52　チェック9件、通過2件、リクエスト3回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-07T1352</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261107T045250Z</guid>
+      <pubDate>Sat, 07 Nov 2026 04:53:50 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱📝 FoundryのCopilot Harnessを動かして、ハーネスなしと比べてみた</title>
+      <link>https://zenn.dev/nomhiro/articles/microsoft-copilot-harness-foundry-try?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/nomhiro/articles/microsoft-copilot-harness-foundry-try?via=curation</guid>
+      <pubDate>Sat, 07 Nov 2026 04:52:50 +0000</pubDate>
+      <category>アプリ開発／MDファイル運用</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft FoundryでCopilot Harnessを活用し、スキル定義を用いたデータ集計と検証を自動化する手順がわかるため、AIエージェントの開発・検証場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・MDファイル運用 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;Microsoft FoundryのプロンプトエージェントでMicrosoft Copilot Harness（プレビュー）が使えるようになったので、さっそく動かしてみました。 ハーネスってそもそも何？という話は、こちらにまとめています。 https://zenn.dev/nomhiro/articles/microsoft-copilot-harness-foundry この記事は、実際に動かしたときのメモです。 ! 2026年10月31日時点の内容です。プレビューなので、仕様は変わる可能性があります。 環境 項目 内容 リージョン Japan East（新規にプロ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱🪙 Copilot Studio のスキルは接続エージェントの先まで届くか (4) 運用に持ち込むなら (最終回)</title>
+      <link>https://qiita.com/tadanok/items/5c71e00a214847ca891a?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/tadanok/items/5c71e00a214847ca891a?via=curation</guid>
+      <pubDate>Sat, 07 Nov 2026 04:52:50 +0000</pubDate>
+      <category>アプリ開発／トークン節約</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioにおけるハブと部門エージェントの接続運用時の検証結果、デバッグ手法、約9,000円の検証費用とクレジット消費の内訳がわかり、複数エージェント連携システムの設計・コスト管理に使える。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: アプリ開発・トークン節約 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;2026 年 10 月時点の情報です。 Microsoft Copilot Studio の画面と挙動、課金の仕組みは変わりやすく、この記事で扱う機能にはプレビュー段階のものが含まれます。 この回で確かめること この回が、連載の最終回です。 第 1 回から第 3 ...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.07 13:40　チェック0件、通過0件、リクエスト0回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-07T1340</link>
