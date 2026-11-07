@@ -584,7 +584,8 @@ def main():
                  f"チェック{len(articles)}件、通過{len(accepted)}件、リクエスト{gemini.calls}回",
         "link": add_link_param(settings["feed_link"], "run=" + jst.strftime("%Y-%m-%dT%H%M")),
         "guid": settings["feed_link"] + "#report-" + now.strftime("%Y%m%dT%H%M%SZ"),
-        "pubDate": format_datetime(now),
+        # 同じ回の記事より新しくして、Inoreaderで完了報告が記事より上に出るようにする
+        "pubDate": format_datetime(now + timedelta(minutes=settings.get("report_pubdate_offset_minutes", 1))),
         "description": "<p>Gemini選別の実行結果です。</p>",
         "category": "完了報告",
     }
