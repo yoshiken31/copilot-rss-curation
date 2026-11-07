@@ -229,6 +229,55 @@ def filter_new(articles, seen, now, first_run_days):
     return out, stats
 
 
+def with_fetch_limit(url, limit):
+    """フィードURLのクエリ n を limit で上書きする（Secretは変えず、使うときだけ差し替える）。"""
+    if not limit:
+        return url
+    p = urllib.parse.urlsplit(url)
+    q = [(k, v) for k, v in urllib.parse.parse_qsl(p.query, keep_blank_values=True) if k != "n"]
+    q.append(("n", str(limit)))
+    return urllib.parse.urlunsplit((p.scheme, p.netloc, p.path, urllib.parse.urlencode(q), p.fragment))
+
+
+def is_seen(article, seen):
+    tk = title_key(article.title)
+    return article.url in seen["items"] or bool(tk and tk in seen["titles"])
+
+
+def skip_old_unseen(articles, seen, now):
+    """取得順（新しい順）で、処理済みのうち一番古いものより後ろにある未処理記事は、
+    判定せず処理済みにする。処理済みが1件もなければ何もしない。(残す記事, スキップ件数) を返す。"""
+    last = -1
+    for i, a in enumerate(articles):
+        if is_seen(a, seen):
+            last = i
+    if last < 0:
+        return articles, 0
+    tail = articles[last + 1:]
+    for a in tail:
+        mark_seen(seen, a, now)
+    return articles[: last + 1], len(tail)
+
+
+def report_title(jst, new_count, fetch_limit, checked, passed, calls, check_over_limit=True):
+    over = bool(check_over_limit and fetch_limit and new_count >= fetch_limit)
+    new_txt = f"新規{new_count}件" + ("（上限超）" if over else "")
+    return (f"【完了報告】{jst.strftime('%Y.%m.%d %H:%M')}　"
+            f"{new_txt}、チェック{checked}件、通過{passed}件、リクエスト{calls}回")
+
+
+def report_description(fetched, seen_count, new_count, fetch_limit, skipped):
+    lines = [
+        "Gemini選別の実行結果です。",
+        f"取得件数：{fetched}件",
+        f"処理済み件数：{seen_count}件",
+        f"新規件数：{new_count}件",
+        f"取得上限：{fetch_limit}件",
+        f"スキップ件数（古い未処理記事）：{skipped}件",
+    ]
+    return "".join(f"<p>{x}</p>" for x in lines)
+
+
 def mark_seen(seen, article, now):
     seen["items"][article.url] = now.strftime("%Y-%m-%d")
     tk = title_key(article.title)
@@ -533,7 +582,7 @@ def main():
     now = datetime.now(timezone.utc).replace(microsecond=0)
 
     try:
-        data, _ = http_get(feed_url, 60, 30_000_000)
+        data, _ = http_get(with_fetch_limit(feed_url, settings.get("fetch_limit")), 60, 30_000_000)
         fetched = parse_feed(data)
     except Exception as e:  # URLを含み得るためメッセージは出さず種別のみ
         log.error("フィード取得/解析に失敗しました (%s)", type(e).__name__)
@@ -541,6 +590,8 @@ def main():
     log.info("取得: %d件", len(fetched))
 
     reeval = os.environ.get("REEVALUATE_DAYS", "").strip()
+    skipped = 0
+    candidates = fetched
     if reeval:
         # 再評価: 処理済みの記録を無視して、直近の指定日数分を判定し直す
         days = int(reeval)
@@ -548,7 +599,12 @@ def main():
         scratch = {"initialized": False, "items": {}, "titles": {}}
         articles, stats = filter_new(fetched, scratch, now, days)
     else:
-        articles, stats = filter_new(fetched, seen, now, settings["first_run_days"])
+        # 処理済みの一番古い記事より古い未処理記事は、判定せず処理済みにする（上限を上げた初回対策）
+        candidates, skipped = skip_old_unseen(fetched, seen, now)
+        if skipped:
+            log.info("古い未処理記事をスキップ（処理済みにする）: %d件", skipped)
+        articles, stats = filter_new(candidates, seen, now, settings["first_run_days"])
+    new_count = len(candidates) - stats["seen"]
     log.info("除外: 処理済み%d / 重複%d / 初回期間外%d → 判定対象%d件",
              stats["seen"], stats["duplicate"], stats["too_old"], len(articles))
     deferred = max(0, len(articles) - settings["max_items_per_run"])
@@ -580,13 +636,14 @@ def main():
     # 完了報告エントリ（feed.xmlにだけ載せ、seen.jsonには記録しない）
     jst = now.astimezone(timezone(timedelta(hours=9)))
     report = {
-        "title": f"【完了報告】{jst.strftime('%Y.%m.%d %H:%M')}　"
-                 f"チェック{len(articles)}件、通過{len(accepted)}件、リクエスト{gemini.calls}回",
+        "title": report_title(jst, new_count, settings.get("fetch_limit"), len(articles),
+                              len(accepted), gemini.calls, check_over_limit=not reeval),
         "link": add_link_param(settings["feed_link"], "run=" + jst.strftime("%Y-%m-%dT%H%M")),
         "guid": settings["feed_link"] + "#report-" + now.strftime("%Y%m%dT%H%M%SZ"),
         # 同じ回の記事より新しくして、Inoreaderで完了報告が記事より上に出るようにする
         "pubDate": format_datetime(now + timedelta(minutes=settings.get("report_pubdate_offset_minutes", 1))),
-        "description": "<p>Gemini選別の実行結果です。</p>",
+        "description": report_description(len(fetched), stats["seen"], new_count,
+                                          settings.get("fetch_limit"), skipped),
         "category": "完了報告",
     }
 

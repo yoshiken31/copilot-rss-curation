@@ -33,6 +33,7 @@ Gemini無料枠とGitHub無料枠だけで動き、Claudeの使用量・課金�
   - `feed_title` / `feed_description` / `feed_link`: フィードの表示情報。
   - `curation_link_param`: 新しく採用した記事の link・guid に付ける目印（既定 `via=curation`）。空にすると付けない。
   - `report_pubdate_offset_minutes`: 完了報告の pubDate を実行時刻から何分進めるか（既定1）。
+  - `fetch_limit`: Inoreaderから1回に取得する最大件数（既定300。`INOREADER_FEED_URL` の `n` をこの値で上書きして使う。Inoreaderは300件を返すことを確認済み）。新規がこの件数に達した回は、完了報告に「新規300件（上限超）」と出て、取りこぼしの可能性を示す。
 - 再評価: Actions の `curate` → Run workflow で「reevaluate_days」に日数（例 3）を入れると、処理済みを無視して直近N日分を現在の基準で判定し直し、`docs/feed.xml` を作り直します。呼び出し間隔と上限回数は通常どおりです。空欄なら通常実行です。
 - 実行ログには、1次・2次それぞれの点数ごとの件数（5点／4点／3点以下）が出ます。点数の偏りの確認に使えます。
 - Secrets: `INOREADER_FEED_URL`、`GEMINI_API_KEY`（リポジトリの Settings → Secrets and variables → Actions）。
@@ -47,3 +48,4 @@ Gemini無料枠とGitHub無料枠だけで動き、Claudeの使用量・課金�
 ## 調整履歴
 - 2026-11-07：Inoreaderの重複フィルター（URLが同じ・比較期間1日）で選別フィードの記事が元記事の重複として消されていたため、新規採用記事の link・guid に `via=curation` を付け、完了報告の link に日本時間の実行日時（`?run=YYYY-MM-DDThhmm`）を付けるようにした（既存記事は変更なし）。
 - 2026-11-07：Inoreaderで完了報告が同じ回の記事の間に入ってしまうため、完了報告の pubDate を実行時刻の1分後にして記事より上に出るようにした（記事の pubDate・既存の完了報告は変更なし）。
+- 2026-11-07：取得上限を100件から300件（`fetch_limit`）に引き上げ。完了報告のタイトルに「新規N件」（上限に達したら「（上限超）」）、本文に取得・処理済み・新規・上限・スキップの件数を追加。上限を上げた初回に古い記事がまとめて配信されないよう、通常実行では処理済みの一番古い記事より古い未処理記事を判定せず処理済みにする（再評価モードでは行わない）。

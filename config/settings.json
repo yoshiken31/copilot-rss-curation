@@ -18,5 +18,6 @@
   "feed_description": "InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード",
   "feed_link": "https://yoshiken31.github.io/copilot-rss-curation/",
   "curation_link_param": "via=curation",
-  "report_pubdate_offset_minutes": 1
+  "report_pubdate_offset_minutes": 1,
+  "fetch_limit": 300
 }

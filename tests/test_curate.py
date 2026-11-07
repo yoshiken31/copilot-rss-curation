@@ -82,6 +82,39 @@ class T(unittest.TestCase):
         self.assertEqual(f("https://e.com/a?via=curation", "via=curation"), "https://e.com/a?via=curation")
         self.assertEqual(f("https://e.com/a", ""), "https://e.com/a")
 
+    def test_with_fetch_limit(self):
+        f = curate.with_fetch_limit
+        self.assertEqual(f("https://i.com/s/tag/%E3%81%82?n=100", 300), "https://i.com/s/tag/%E3%81%82?n=300")
+        self.assertEqual(f("https://i.com/s/tag/x", 300), "https://i.com/s/tag/x?n=300")
+        self.assertEqual(f("https://i.com/s?a=1&n=5", 300), "https://i.com/s?a=1&n=300")
+        self.assertEqual(f("https://i.com/s?n=100", None), "https://i.com/s?n=100")
+
+    def test_report_title_over_limit(self):
+        jst = datetime(2026, 11, 7, 13, 40)
+        t = curate.report_title(jst, 28, 300, 26, 6, 9)
+        self.assertEqual(t, "【完了報告】2026.11.07 13:40　新規28件、チェック26件、通過6件、リクエスト9回")
+        t = curate.report_title(jst, 300, 300, 300, 40, 20)
+        self.assertEqual(t, "【完了報告】2026.11.07 13:40　新規300件（上限超）、チェック300件、通過40件、リクエスト20回")
+        t = curate.report_title(jst, 300, 300, 300, 40, 20, check_over_limit=False)
+        self.assertNotIn("上限超", t)
+
+    def test_skip_old_unseen(self):
+        def art(n):
+            return curate.Article(f"title{n}", f"https://e.com/{n}", "", NOW, "e.com")
+        arts = [art(i) for i in range(6)]  # 新しい順: 0が最新
+        seen = {"initialized": True, "items": {"https://e.com/1": "2026-11-01", "https://e.com/3": "2026-11-01"}, "titles": {}}
+        kept, skipped = curate.skip_old_unseen(arts, seen, NOW)
+        self.assertEqual([a.url[-1] for a in kept], ["0", "1", "2", "3"])
+        self.assertEqual(skipped, 2)
+        self.assertIn("https://e.com/4", seen["items"])
+        self.assertIn("https://e.com/5", seen["items"])
+        self.assertNotIn("https://e.com/0", seen["items"])
+        # 処理済みが1件もない場合はスキップしない
+        empty = {"initialized": True, "items": {}, "titles": {}}
+        kept, skipped = curate.skip_old_unseen([art(7), art(8)], empty, NOW)
+        self.assertEqual((len(kept), skipped), (2, 0))
+        self.assertEqual(empty["items"], {})
+
     def test_stage1_unjudged_not_marked_seen(self):
         class G:
             def generate_json(self, prompt):
