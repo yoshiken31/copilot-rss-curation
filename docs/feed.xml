@@ -5,7 +5,39 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 04:52:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 06:12:36 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.07 15:12　新規8件、チェック8件、通過3件、リクエスト4回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-07T1512</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261107T061236Z</guid>
+      <pubDate>Sat, 07 Nov 2026 06:13:36 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：116件&lt;/p&gt;&lt;p&gt;新規件数：8件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：176件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ Microsoft 365 Copilot Chat(ベーシック)で、MP4の説明動画を書き出す標準を作った</title>
+      <link>https://zenn.dev/wataru_fujita/articles/m365-copilot-chat-mp4-standard?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/wataru_fujita/articles/m365-copilot-chat-mp4-standard?via=curation</guid>
+      <pubDate>Sat, 07 Nov 2026 06:12:36 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 Copilot ChatでMarkdownからMP4動画を生成する手順と設計思想がわかり、社内で動画作成を標準化する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;想定読者と得られること Microsoft 365 のライセンスに含まれる Copilot Chat(追加のライセンスは不要)を使っている人向けです。読み終えると、3つのMarkdownを渡して、MP4の説明動画を書き出してもらう方法と、その仕組みが分かります。 前提環境 ライセンスの区分とモデル名は、2026年11月7日時点のものです。 項目 内容 環境 Microsoft 365 Copilot Chat のコードインタープリター(Microsoft 365 のライセンスに含まれる。追加のライセンスは不要。2026年11月7日時点) モード GPT-5.6 ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ 録画したMP4ファイルをMicrosoft 365 Copilotで分析する方法</title>
+      <link>https://qiita.com/maskot1977/items/650cbd13e3ff037d0b02?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/maskot1977/items/650cbd13e3ff037d0b02?via=curation</guid>
+      <pubDate>Sat, 07 Nov 2026 06:12:36 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365のClipchampとSharePointを活用し、MP4動画からトランスクリプトを生成してCopilotで要約・分析する手順が分かり、会議録画の活用場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;Teams会議などを録画したMP4ファイルが手元にあるものの、 会議内容を文字起こししたい 会議を要約したい 決定事項を抽出したい アクションアイテムを整理したい Copilotに録画内容について質問したい という場合があります。 当初は、 MP4 → 音声ファイル（...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ 【Copilot Studio】GitHub CopilotハーネスならFabric Data AgentをCopilot Chatから使えるのか検証してみた</title>
+      <link>https://qiita.com/ReijiOtake/items/213451b17fefe2fc2ba5?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/ReijiOtake/items/213451b17fefe2fc2ba5?via=curation</guid>
+      <pubDate>Sat, 07 Nov 2026 06:12:36 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot StudioでGitHub Copilotハーネスを使用し、Microsoft 365 Copilot ChatからFabric Data Agentをツールとして連携する手順がわかるため、社内データ活用のチャットボットを構築する場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに 以前、複数のFabric Data AgentをCopilot Studioから呼び出し、質問内容に応じて適切なData Agentへ振り分ける構成を検証しました。 イメージとしては、以下のような構成です。 この構成でCopilot Studioの画面やTea...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.07 13:52　チェック9件、通過2件、リクエスト3回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-07T1352</link>
