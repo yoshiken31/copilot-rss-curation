@@ -31,6 +31,7 @@ Gemini無料枠とGitHub無料枠だけで動き、Claudeの使用量・課金�
   - `retry_wait_seconds` / `max_retries`: 上限エラー(429等)時の待ち秒数と再試行回数。
   - `fetch_*` / `body_max_chars`: 本文取得のタイムアウト・最大サイズ・Geminiに渡す最大文字数。
   - `feed_title` / `feed_description` / `feed_link`: フィードの表示情報。
+  - `curation_link_param`: 新しく採用した記事の link・guid に付ける目印（既定 `via=curation`）。空にすると付けない。
 - 再評価: Actions の `curate` → Run workflow で「reevaluate_days」に日数（例 3）を入れると、処理済みを無視して直近N日分を現在の基準で判定し直し、`docs/feed.xml` を作り直します。呼び出し間隔と上限回数は通常どおりです。空欄なら通常実行です。
 - 実行ログには、1次・2次それぞれの点数ごとの件数（5点／4点／3点以下）が出ます。点数の偏りの確認に使えます。
 - Secrets: `INOREADER_FEED_URL`、`GEMINI_API_KEY`（リポジトリの Settings → Secrets and variables → Actions）。
@@ -41,3 +42,6 @@ Gemini無料枠とGitHub無料枠だけで動き、Claudeの使用量・課金�
 - **ログ・本文取得**: ログは件数の要約のみです。本文を取れない記事は、タイトルと要約からコメントを作ります。
 - **定期実行の自動停止**: 公開リポジトリでは、60日間動きがないと定期実行が自動で無効になります。`state/seen.json` は通常毎日更新・コミットされるため止まりにくい設計ですが、ワークフロー自身（GITHUB_TOKEN）のコミットが「動き」に数えられるかは公式文書で確認できていません。無効化された場合は Actions タブで再度有効にしてください。
 - Inoreaderの出力フィードURLには `?n=100` を付けています（件数指定。公式文書には記載がなく、動作確認のみ）。
+
+## 調整履歴
+- 2026-11-07：Inoreaderの重複フィルター（URLが同じ・比較期間1日）で選別フィードの記事が元記事の重複として消されていたため、新規採用記事の link・guid に `via=curation` を付け、完了報告の link に日本時間の実行日時（`?run=YYYY-MM-DDThhmm`）を付けるようにした（既存記事は変更なし）。

@@ -16,5 +16,6 @@
   "body_max_chars": 8000,
   "feed_title": "Microsoft Copilot 活用事例（選別）",
   "feed_description": "InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード",
-  "feed_link": "https://yoshiken31.github.io/copilot-rss-curation/"
+  "feed_link": "https://yoshiken31.github.io/copilot-rss-curation/",
+  "curation_link_param": "via=curation"
 }

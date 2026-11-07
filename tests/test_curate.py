@@ -73,6 +73,15 @@ class T(unittest.TestCase):
         self.assertTrue(back[0]["title"].startswith(curate.AREAS["md"] + curate.AREAS["dx"]))
         self.assertIn("参考になる", back[0]["description"])
 
+    def test_add_link_param(self):
+        f = curate.add_link_param
+        self.assertEqual(f("https://e.com/a", "via=curation"), "https://e.com/a?via=curation")
+        self.assertEqual(f("https://e.com/a?x=1", "via=curation"), "https://e.com/a?x=1&via=curation")
+        self.assertEqual(f("https://e.com/a#top", "via=curation"), "https://e.com/a?via=curation#top")
+        self.assertEqual(f("https://e.com/a?x=1#top", "via=curation"), "https://e.com/a?x=1&via=curation#top")
+        self.assertEqual(f("https://e.com/a?via=curation", "via=curation"), "https://e.com/a?via=curation")
+        self.assertEqual(f("https://e.com/a", ""), "https://e.com/a")
+
     def test_stage1_unjudged_not_marked_seen(self):
         class G:
             def generate_json(self, prompt):

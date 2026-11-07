@@ -437,7 +437,22 @@ def load_feed_items(path):
     return items
 
 
-def article_to_item(a, now):
+def add_link_param(url, param):
+    """URLにクエリパラメータ(例 "via=curation")を足す。#以降は保つ。すでに付いていれば何もしない。"""
+    if not param:
+        return url
+    base, sep, frag = url.partition("#")
+    _, _, query = base.partition("?")
+    if param in query.split("&"):
+        return url
+    if base.endswith(("?", "&")):
+        joiner = ""
+    else:
+        joiner = "&" if "?" in base else "?"
+    return base + joiner + param + sep + frag
+
+
+def article_to_item(a, now, link_param=""):
     esc = lambda s: (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
     desc = (
         f"<p><b>コメント:</b> {esc(a.comment)}</p>"
@@ -447,8 +462,9 @@ def article_to_item(a, now):
         desc += f"<p>{esc(a.summary[:300])}</p>"
     return {
         "title": f"{''.join(AREAS[x] for x in a.areas)} {a.title}",
-        "link": a.url,
-        "guid": a.url,
+        # Inoreaderの重複フィルター対策：フィード側のlink/guidだけ目印付きにする（seen.jsonは元URLのまま）
+        "link": add_link_param(a.url, link_param),
+        "guid": add_link_param(a.url, link_param),
         "pubDate": format_datetime(now),
         "description": desc,
         "category": "／".join(AREA_NAMES[x] for x in a.areas),
@@ -566,7 +582,7 @@ def main():
     report = {
         "title": f"【完了報告】{jst.strftime('%Y.%m.%d %H:%M')}　"
                  f"チェック{len(articles)}件、通過{len(accepted)}件、リクエスト{gemini.calls}回",
-        "link": settings["feed_link"],
+        "link": add_link_param(settings["feed_link"], "run=" + jst.strftime("%Y-%m-%dT%H%M")),
         "guid": settings["feed_link"] + "#report-" + now.strftime("%Y%m%dT%H%M%SZ"),
         "pubDate": format_datetime(now),
         "description": "<p>Gemini選別の実行結果です。</p>",
@@ -574,7 +590,7 @@ def main():
     }
 
     existing = [] if reeval else load_feed_items(FEED_PATH)
-    items = merge_items(existing, [article_to_item(a, now) for a in accepted] + [report],
+    items = merge_items(existing, [article_to_item(a, now, settings.get("curation_link_param", "")) for a in accepted] + [report],
                         now, settings["feed_retention_days"])
     FEED_PATH.write_bytes(build_feed(items, settings, now))
     SEEN_PATH.write_text(json.dumps(seen, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
