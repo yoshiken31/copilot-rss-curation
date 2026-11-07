@@ -141,6 +141,44 @@ class T(unittest.TestCase):
         judged = curate.resolve_pending(pending, arts, seen)
         self.assertEqual((judged, pending), (4, {}))
 
+    def test_pending_article_judged_even_if_pushed_out_of_fetch(self):
+        pub = datetime(2026, 11, 1, tzinfo=timezone.utc)
+        def art(n):
+            return curate.Article(f"title{n}", f"https://e.com/{n}", f"summary{n}", pub, f"src{n}")
+        arts = [art(i) for i in range(4)]
+        seen = {"initialized": True, "items": {}, "titles": {}}
+        curate.mark_seen(seen, arts[0], NOW)
+        pending = {}
+        curate.update_pending(pending, arts[1:], seen, NOW)   # 前回: A1〜A3 が未判定で保留
+        # 保存した情報が判定に必要な項目を含む
+        self.assertEqual(pending["https://e.com/2"]["summary"], "summary2")
+        self.assertEqual(pending["https://e.com/2"]["source"], "src2")
+        # 古い形式（URL・タイトルだけ）の保留は、取得結果にないと復元できない
+        pending["https://e.com/old"] = {"title": "old", "since": "2026-10-01"}
+        # 次回: 取得結果は新しい記事だけ（A1〜A3 は押し出された）
+        fetched = [curate.Article("new", "https://e.com/new", "s", NOW, "x"), arts[0]]
+        extras = curate.pending_extra_articles(pending, fetched)
+        self.assertEqual(sorted(a.url[-1] for a in extras), ["1", "2", "3"])
+        e2 = [a for a in extras if a.url.endswith("/2")][0]
+        self.assertEqual((e2.title, e2.summary, e2.source, e2.published), ("title2", "summary2", "src2", pub))
+        out, st = curate.filter_new(fetched + extras, seen, NOW, 3)
+        self.assertEqual(sorted(a.url for a in out), ["https://e.com/1", "https://e.com/2", "https://e.com/3", "https://e.com/new"])
+        for a in out:
+            curate.mark_seen(seen, a, NOW)
+        judged = curate.resolve_pending(pending, fetched + extras, seen)
+        self.assertEqual(judged, 3)
+        self.assertEqual(list(pending), ["https://e.com/old"])   # 復元できない古い形式だけ残る
+
+    def test_pending_prefers_fetched_info(self):
+        pub = datetime(2026, 11, 1, tzinfo=timezone.utc)
+        a = curate.Article("t", "https://e.com/x", "stored", pub, "s")
+        pending = {}
+        curate.update_pending(pending, [a], {"items": {}, "titles": {}}, NOW)
+        fetched_a = curate.Article("t", "https://e.com/x", "fresh", pub, "s")
+        self.assertEqual(curate.pending_extra_articles(pending, [fetched_a]), [])
+        curate.update_pending(pending, [fetched_a], {"items": {}, "titles": {}}, NOW)
+        self.assertEqual(pending["https://e.com/x"]["summary"], "fresh")
+
     def test_pending_roundtrip(self):
         import tempfile
         p = Path(tempfile.mkdtemp()) / "pending.json"
