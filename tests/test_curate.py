@@ -115,6 +115,39 @@ class T(unittest.TestCase):
         self.assertEqual((len(kept), skipped), (2, 0))
         self.assertEqual(empty["items"], {})
 
+    def test_pending_survives_abort_and_is_judged_next_run(self):
+        def art(n):
+            return curate.Article(f"title{n}", f"https://e.com/{n}", "", NOW, "e.com")
+        arts = [art(i) for i in range(6)]  # 新しい順
+        seen = {"initialized": True, "items": {}, "titles": {}}
+        # 前回: A0,A1 だけ判定できて中断。A2〜A5 は未判定
+        curate.mark_seen(seen, arts[0], NOW)
+        curate.mark_seen(seen, arts[1], NOW)
+        pending = {}
+        curate.update_pending(pending, arts[2:], seen, NOW)
+        self.assertEqual(sorted(pending), [f"https://e.com/{i}" for i in range(2, 6)])
+        # 保留なしだと、翌回に A2〜A5 は古い未処理記事としてスキップされてしまう（問題の再現）
+        seen_no = {"initialized": True, "items": dict(seen["items"]), "titles": dict(seen["titles"])}
+        kept, skipped = curate.skip_old_unseen(arts, seen_no, NOW)
+        self.assertEqual(skipped, 4)
+        # 保留ありなら残る
+        kept, skipped = curate.skip_old_unseen(arts, seen, NOW, set(pending))
+        self.assertEqual((len(kept), skipped), (6, 0))
+        out, st = curate.filter_new(kept, seen, NOW, 3)
+        self.assertEqual([a.url[-1] for a in out], ["2", "3", "4", "5"])
+        # 翌回の判定が済んだら保留から消え、判定した件数が返る
+        for a in out:
+            curate.mark_seen(seen, a, NOW)
+        judged = curate.resolve_pending(pending, arts, seen)
+        self.assertEqual((judged, pending), (4, {}))
+
+    def test_pending_roundtrip(self):
+        import tempfile
+        p = Path(tempfile.mkdtemp()) / "pending.json"
+        self.assertEqual(curate.load_pending(p), {})
+        curate.save_pending({"https://e.com/x": {"title": "t", "since": "2026-11-07"}}, p)
+        self.assertEqual(curate.load_pending(p)["https://e.com/x"]["since"], "2026-11-07")
+
     def test_stage1_unjudged_not_marked_seen(self):
         class G:
             def generate_json(self, prompt):

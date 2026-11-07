@@ -22,6 +22,7 @@ SETTINGS_PATH = ROOT / "config" / "settings.json"
 CRITERIA_PATH = ROOT / "config" / "criteria.md"
 SEEN_PATH = ROOT / "state" / "seen.json"
 FEED_PATH = ROOT / "docs" / "feed.xml"
+PENDING_PATH = ROOT / "state" / "pending.json"
 
 AREAS = {
     "md": "\U0001F4DD",     # 📝
@@ -244,19 +245,66 @@ def is_seen(article, seen):
     return article.url in seen["items"] or bool(tk and tk in seen["titles"])
 
 
-def skip_old_unseen(articles, seen, now):
+def skip_old_unseen(articles, seen, now, pending=()):
     """取得順（新しい順）で、処理済みのうち一番古いものより後ろにある未処理記事は、
-    判定せず処理済みにする。処理済みが1件もなければ何もしない。(残す記事, スキップ件数) を返す。"""
+    判定せず処理済みにする。処理済みが1件もなければ何もしない。
+    保留リスト（前回判定できず翌回に回した記事）にある記事はスキップせず残す。
+    (残す記事, スキップ件数) を返す。"""
     last = -1
     for i, a in enumerate(articles):
         if is_seen(a, seen):
             last = i
     if last < 0:
         return articles, 0
-    tail = articles[last + 1:]
-    for a in tail:
-        mark_seen(seen, a, now)
-    return articles[: last + 1], len(tail)
+    kept = list(articles[: last + 1])
+    skipped = 0
+    for a in articles[last + 1:]:
+        if a.url in pending:
+            kept.append(a)
+        else:
+            mark_seen(seen, a, now)
+            skipped += 1
+    return kept, skipped
+
+
+# ---------- 保留リスト（判定できず翌回に回した記事） ----------
+
+def load_pending(path=None):
+    path = path or PENDING_PATH
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(data, dict):
+                return data
+        except ValueError:
+            log.warning("pending.json could not be parsed; starting fresh")
+    return {}
+
+
+def save_pending(pending, path=None):
+    path = path or PENDING_PATH
+    path.write_text(json.dumps(pending, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+                    encoding="utf-8")
+
+
+def resolve_pending(pending, fetched, seen):
+    """判定が済んだ（処理済みになった）記事を保留から外す。保留から判定できた件数を返す。"""
+    by_url = {a.url: a for a in fetched}
+    judged = 0
+    for u in list(pending):
+        if u in seen["items"]:
+            judged += 1
+            del pending[u]
+        elif u in by_url and is_seen(by_url[u], seen):
+            del pending[u]  # タイトル一致などで処理済み扱いになった
+    return judged
+
+
+def update_pending(pending, articles, seen, now):
+    """今回の判定対象のうち、処理済みになっていない（判定できなかった）記事を保留に足す。"""
+    for a in articles:
+        if a.url not in seen["items"]:
+            pending.setdefault(a.url, {"title": a.title, "since": now.strftime("%Y-%m-%d")})
 
 
 def report_title(jst, new_count, fetch_limit, checked, passed, calls, check_over_limit=True):
@@ -266,7 +314,7 @@ def report_title(jst, new_count, fetch_limit, checked, passed, calls, check_over
             f"{new_txt}、チェック{checked}件、通過{passed}件、リクエスト{calls}回")
 
 
-def report_description(fetched, seen_count, new_count, fetch_limit, skipped):
+def report_description(fetched, seen_count, new_count, fetch_limit, skipped, pending_judged=0, pending_left=0):
     lines = [
         "Gemini選別の実行結果です。",
         f"取得件数：{fetched}件",
@@ -274,6 +322,8 @@ def report_description(fetched, seen_count, new_count, fetch_limit, skipped):
         f"新規件数：{new_count}件",
         f"取得上限：{fetch_limit}件",
         f"スキップ件数（古い未処理記事）：{skipped}件",
+        f"保留から判定した件数：{pending_judged}件",
+        f"残っている保留件数：{pending_left}件",
     ]
     return "".join(f"<p>{x}</p>" for x in lines)
 
@@ -592,6 +642,7 @@ def main():
     reeval = os.environ.get("REEVALUATE_DAYS", "").strip()
     skipped = 0
     candidates = fetched
+    pending = load_pending()
     if reeval:
         # 再評価: 処理済みの記録を無視して、直近の指定日数分を判定し直す
         days = int(reeval)
@@ -600,13 +651,14 @@ def main():
         articles, stats = filter_new(fetched, scratch, now, days)
     else:
         # 処理済みの一番古い記事より古い未処理記事は、判定せず処理済みにする（上限を上げた初回対策）
-        candidates, skipped = skip_old_unseen(fetched, seen, now)
+        candidates, skipped = skip_old_unseen(fetched, seen, now, pending)
         if skipped:
             log.info("古い未処理記事をスキップ（処理済みにする）: %d件", skipped)
         articles, stats = filter_new(candidates, seen, now, settings["first_run_days"])
     new_count = len(candidates) - stats["seen"]
     log.info("除外: 処理済み%d / 重複%d / 初回期間外%d → 判定対象%d件",
              stats["seen"], stats["duplicate"], stats["too_old"], len(articles))
+    all_articles = articles
     deferred = max(0, len(articles) - settings["max_items_per_run"])
     articles = articles[: settings["max_items_per_run"]]
     if deferred:
@@ -630,6 +682,11 @@ def main():
 
     # 中断時も、ここまでに確定した分は保存する
     # （採用記事は2次確認の最中に処理済みになっているため、フィードも必ず更新する）
+    # 判定できず翌回に回す記事（中断・判定失敗・件数上限超え）は保留リストに記録する
+    pending_judged = resolve_pending(pending, fetched, seen)
+    update_pending(pending, all_articles, seen, now)
+    save_pending(pending)
+    log.info("保留: 判定済み%d件 / 残り%d件", pending_judged, len(pending))
     seen["initialized"] = True
     prune_seen(seen, now, settings["seen_retention_days"])
 
@@ -643,7 +700,8 @@ def main():
         # 同じ回の記事より新しくして、Inoreaderで完了報告が記事より上に出るようにする
         "pubDate": format_datetime(now + timedelta(minutes=settings.get("report_pubdate_offset_minutes", 1))),
         "description": report_description(len(fetched), stats["seen"], new_count,
-                                          settings.get("fetch_limit"), skipped),
+                                          settings.get("fetch_limit"), skipped,
+                                          pending_judged, len(pending)),
         "category": "完了報告",
     }
 
