@@ -5,7 +5,31 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 09:38:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 00:10:50 +0000</lastBuildDate>
+    <item>
+      <title>📝📱 Copilot Studioエージェントの自律度、どう決めるか——実務で使う4つの軸</title>
+      <link>https://qiita.com/Sidejob/items/85a9ec07f0d137acffb5</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/85a9ec07f0d137acffb5</guid>
+      <pubDate>Sat, 07 Nov 2026 00:10:50 +0000</pubDate>
+      <category>MDファイル運用／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioのエージェントにおける「自律度（承認フローの有無）」を決定する4つの判断軸と、実務での失敗パターンがわかる。エージェントを業務に導入し、自動化範囲とリスク管理を設計する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・アプリ開発 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;この記事で分かること Copilot Studioエージェントの「自律度」を設定するための判断フレームワーク 承認フローを入れるべきステップと省略できるステップの見分け方 大企業展開で繰り返し遭遇した、自律度設定のよくある失敗パターン 企業でCopilot Stud...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ 株式会社Beyontがワコールに提供した人事規定検索支援AIエージェントの成功事例 - VOIX</title>
+      <link>https://voix.jp/business-cards/beyont-wacoal-ai-agent-success</link>
+      <guid isPermaLink="true">https://voix.jp/business-cards/beyont-wacoal-ai-agent-success</guid>
+      <pubDate>Sat, 07 Nov 2026 00:10:50 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioを用いた人事規定検索ボットの構築手順と、ガードレール設計や精度検証の事例がわかり、チャットボット導入時に使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: voix.jp&lt;/p&gt;&lt;p&gt;... Copilot 」Specializationを取得しており、株式会社ワコール（本社：京都府京都市、代表取締役社長執行役員：川西 啓介）に対して、Microsoft Copilot Studio ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【完了報告】2026.11.07 09:10　チェック8件、通過2件、リクエスト4回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261107T001050Z</guid>
+      <pubDate>Sat, 07 Nov 2026 00:10:50 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>📱⚙️ Copilot Studioエージェントの自律実行、どこまで任せるか——設計で使った4つの判断軸と限界</title>
       <link>https://zenn.dev/sidejob/articles/a08ea36f840d72726</link>

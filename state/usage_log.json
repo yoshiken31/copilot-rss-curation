@@ -33,5 +33,12 @@
     "accepted": 1,
     "calls": 2,
     "aborted": false
+  },
+  {
+    "date": "2026-11-07",
+    "input": 8,
+    "accepted": 2,
+    "calls": 4,
+    "aborted": false
   }
 ]
