@@ -5,7 +5,23 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 18:09:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 01:57:40 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.08 10:57　新規4件、チェック4件、通過1件、リクエスト2回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-08T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261108T015740Z</guid>
+      <pubDate>Sun, 08 Nov 2026 01:58:40 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：296件&lt;/p&gt;&lt;p&gt;新規件数：4件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Copilotを入れたのに使われない——過去の相談14件で見えた共通点</title>
+      <link>https://qiita.com/Sidejob/items/a411b8f7675496c78d0b?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/a411b8f7675496c78d0b?via=curation</guid>
+      <pubDate>Sun, 08 Nov 2026 01:57:40 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 Copilotが定着しない原因と、得意な業務から導入して成功体験を作る手順が分かり、社内展開の初期設計に使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;この記事の対象：会社でMicrosoft 365 Copilotを導入したものの、チームに定着していないと感じている担当者。数年前に口頭のコンサルで受けた相談14件で繰り返し出てきたパターンと、最初に変えたことを整理します。 対象読者 社内のAI推進担当として、または...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.08 03:09　新規2件、チェック2件、通過0件、リクエスト1回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-08T0309</link>
