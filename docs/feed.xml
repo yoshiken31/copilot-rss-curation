@@ -5,7 +5,87 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 01:57:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 01:57:45 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.10 10:57　新規64件、チェック60件、通過9件、リクエスト14回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-10T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261110T015745Z</guid>
+      <pubDate>Tue, 10 Nov 2026 01:58:45 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：236件&lt;/p&gt;&lt;p&gt;新規件数：64件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Copilot Studioで社内AIエージェントを作ったら権限まわりでハマった話</title>
+      <link>https://qiita.com/keiichik_kk/items/6481699fd401a3eaf938?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/keiichik_kk/items/6481699fd401a3eaf938?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioでの社内AIエージェント構築時に発生するSharePoint等の権限エラーの切り分け手順がわかり、社内ボット導入時のトラブルシューティングに使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに Copilot Studioを使って、社内のSharePointやMicrosoft 365の情報を参照できる「社内AIエージェント」を作ろうとしました。 やりたいこと自体はシンプルです。 SharePointの社内資料を検索する Teamsからエージェントを...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🪙⚙️ Power Automateのフロー設計で費用が膨らむ3パターン</title>
+      <link>https://qiita.com/Sidejob/items/487d9c425b6222ee4827?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/487d9c425b6222ee4827?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>トークン節約／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power Automateのコスト増を防ぐ3つの設計パターンと確認手順が分かり、フローのコスト管理や最適化を行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: トークン節約・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;対象読者：Power Automateを企業に展開しているIT担当者・フロー設計者。コスト管理に課題を感じているか、これからフローを本番に移そうとしている人 この記事で分かること：Power Automateで費用が想定外に増えやすい3つの設計パターンと、事前に確認するた...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Teamsの文字起こしを保存せずにAI議事要約――できることと管理上の注意点</title>
+      <link>https://qiita.com/phamxuanquyen22/items/746e0fa7bae3b04950e3?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/746e0fa7bae3b04950e3?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Teamsの文字起こしを保存せずにAI議事要約を作成する機能の設定手順と管理上の注意点がわかり、M365 Copilotの導入場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月9日時点の情報です。TeamsとMicrosoft 365 Copilotは更新が速い製品のため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 本稿は公開された公式資料を整理したものです。対象は、文字起こしを保存せ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝📱 Copilot Studioのトピック内で「項目の作成」を利用する際に発生する、Input バインドエラーの回避策</title>
+      <link>https://blog.jbs.co.jp/entry/2026/11/06/091351?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/11/06/091351?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>MDファイル運用／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot StudioでSharePoint項目の作成時に発生するInputバインドエラーをグローバル変数で回避する手順がわかり、チャットボット構築のトラブルシューティングに使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・アプリ開発 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;Copilot Studioの標準ハーネスで作成したエージェントで「項目の作成」を使用した際の、Input バインド エラーを回避した方法について解説します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ メール要約だけじゃなかった！Outlook Copilot がちょっと見ない間に便利になっていました</title>
+      <link>https://blog.jbs.co.jp/entry/2026/10/28/090911?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/10/28/090911?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Outlook Copilotの機能拡張によるメール優先度の抽出や案件の時系列整理の検証結果がわかり、受信トレイや予定表の横断管理で活用できる。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;2026年7月に機能強化された Outlook Copilot を実際に試してみました。受信トレイや予定表を横断して活用できるようになったことで、メールの要約や返信文作成だけでなく、優先度の高いメールの抽出や案件状況の整理、休暇明けのキャッチアップなどにも活用できる可能性が見えてきました。本記事では、実際の検証結果とあわせて、業務での活用シーンをご紹介します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Microsoft Agent Framework で作ったエージェントを Foundry Hosted Agent にデプロイし、Microsoft 365 Copilot から呼び出す</title>
+      <link>https://blog.jbs.co.jp/entry/2026/10/26/105800?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/10/26/105800?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft Agent Frameworkで作成したエージェントをFoundry Hosted Agent経由でMicrosoft 365 Copilotから呼び出す手順がわかる。カスタムエージェントの外部連携やTeams展開を行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;Microsoft Agent Framework で実装したエージェントを Microsoft Foundry Agent Service の Hosted Agent としてデプロイすると、Foundry ポータルの操作だけで Microsoft 365 Copilot と Microsoft Teams のエージェントとして公開できます。 今回は、ホテルの概算宿泊料金を答えるサンプルエージェントを題材に、Hosted Agent のデプロイから Microsoft 365 Copilot で呼び出せるようになるまでを検証しました。 本記事を読むと、Azure Bot Service のリ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝 Microsoft Agent Framework（MAF）の Agent Harness と Harness Agent を Python で使う</title>
+      <link>https://blog.jbs.co.jp/entry/2026/10/20/091144?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/10/20/091144?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>MDファイル運用</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft Agent FrameworkのPython SDKを用いたAgent Harnessの作成手順と設定方法が分かり、エージェントを構築する場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;Microsoft Agent Framework（MAF）では、長時間・複数ステップにわたるタスクを実行するエージェントの構築に向けて、Agent Harness と Harness Agent を利用できます。 Harness は単なるチャットエージェントの別実装ではありません。モデル呼び出し、ツール実行、セッション状態、承認、計画、観測など、長いタスクをエージェントとして動かすための実行時の構成要素を、一定の設計方針に基づく既定構成として組み合わせる仕組みです。 本記事では、Microsoft Agent Framework (MAF) の Agent Harness と、Python &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️🪙 【Microsoft Fabric】Copilot容量の概要と実装方法 後編</title>
+      <link>https://blog.jbs.co.jp/entry/2026/10/16/100009?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/10/16/100009?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>DX業務自動化／トークン節約</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft FabricのCopilot容量の構成手順とCU消費の集約方法がわかり、コスト管理や環境設計を行う場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化・トークン節約 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;Microsoft Fabric（以降、Fabricと記載）は、データ収集・加工・分析・可視化、さらにAIによるインサイト生成まで、データ活用に必要な機能を一つに統合したクラウドベースの分析プラットフォームです。 前編ではCopilot容量の概要を紹介しましたが、本記事（後編）では、Copilot容量の実装方法について紹介します。 前回記事：【Microsoft Fabric】Copilot容量の概要と実装方法 前編 - JBS Tech Blog ※ 本記事は、Microsoft Fabricについて基礎的な知識を有していることを前提としています。 Copilot容量の構成に必要な要件 容量&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Microsoft Purview 保持ラベルの概要と適用方法</title>
+      <link>https://blog.jbs.co.jp/entry/2026/10/15/095529?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/10/15/095529?via=curation</guid>
+      <pubDate>Tue, 10 Nov 2026 01:57:45 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; SharePointでMicrosoft Purviewの保持ラベルを手動および自動で適用し、指定期間後にファイルを自動削除する手順がわかるため、社内データのガバナンス強化やライフサイクル管理を行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;業界の規制やセキュリティインシデント発生時のリスク軽減のため、組織では以下のようなコンテンツ管理が求められる場合があります。 契約書を7年間保持させる 特定のドキュメントは５年後に削除する Microsoft Purviewの保持設定を利用することで、これらの要件の実現が可能です。 保持ラベルの適用方法には以下があります。 手動適用 自動適用 本記事では、保持ラベルの概要と上記の適用方法についてご紹介します。 概要 保持ラベルの適用方法 手動適用 構成方法 適用方法 自動適用 構成方法 適用方法 さいごに 概要 保持ラベルは、Microsoft 365でメールやドキュメントを「アイテム単位」で&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.09 10:57　新規4件、チェック4件、通過0件、リクエスト1回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-09T1057</link>
