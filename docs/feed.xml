@@ -5,7 +5,39 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:57:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 18:09:11 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.12 03:09　新規14件、チェック14件、通過3件、リクエスト7回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-12T0309</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261111T180911Z</guid>
+      <pubDate>Wed, 11 Nov 2026 18:10:11 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：286件&lt;/p&gt;&lt;p&gt;新規件数：14件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ 生成AIで新人育成はどう変わる？ 指導者の生産性25%向上した事例も</title>
+      <link>https://topics.smt.docomo.ne.jp/amp/article/mycom/business/mycom_3245515?via=curation</link>
+      <guid isPermaLink="true">https://topics.smt.docomo.ne.jp/amp/article/mycom/business/mycom_3245515?via=curation</guid>
+      <pubDate>Wed, 11 Nov 2026 18:09:11 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioを活用した社内問い合わせ対応や新人育成におけるロールプレイング支援の手法と、指導者の生産性が25%向上した事例がわかり、人事・育成部門の業務効率化の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: topics.smt.docomo.ne.jp&lt;/p&gt;&lt;p&gt;Microsoft Copilot Studio を利用したもので、イントラネットに蓄積された情報や業務マニュアルを基に、社員からの質問に回答する。 同様に、メルカリも社内 ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ 初めてのWindows Copilot チャット・ライブラリ・エージェントとExcel・画像の扱い方</title>
+      <link>https://qiita.com/s_horikoshi/items/b129c4850faa22af1652?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/s_horikoshi/items/b129c4850faa22af1652?via=curation</guid>
+      <pubDate>Wed, 11 Nov 2026 18:09:11 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Windows Copilotのチャット・ライブラリ・エージェントやExcel連携の基本機能とライセンス条件がわかり、初期導入や初心者向けの解説場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに WindowsでCopilotを開くと、「チャット」「ライブラリ」「エージェント」などの言葉が出てきます。「どこに質問すればよいのか」「Excelを渡したら、中身まで書き換わるのか」と迷うこともあると思います。 例えば、売上表を使うだけでも、次のように目的...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ Coworkに前の相談を渡す：過去のCopilot Chat・タスクを参照して「相談から実行」へ</title>
+      <link>https://qiita.com/phamxuanquyen22/items/21fd3a14d5ea0c143f4e?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/21fd3a14d5ea0c143f4e?via=curation</guid>
+      <pubDate>Wed, 11 Nov 2026 18:09:11 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; 過去のCopilot ChatやタスクをCoworkの新しい依頼に参照情報として追加する手順がわかるため、業務効率化やプロンプト設計の見直しを行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月11日時点の情報です。Cowork は更新が速い機能のため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 本稿はMicrosoftの公開資料に基づき、職場アカウントのCopilot Coworkを中心に説明します。...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.11 10:57　新規8件、チェック8件、通過1件、リクエスト2回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-11T1057</link>
