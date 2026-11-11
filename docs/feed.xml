@@ -5,7 +5,23 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 18:09:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 01:57:11 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.11 10:57　新規8件、チェック8件、通過1件、リクエスト2回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-11T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261111T015711Z</guid>
+      <pubDate>Wed, 11 Nov 2026 01:58:11 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：292件&lt;/p&gt;&lt;p&gt;新規件数：8件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Microsoft Foundry の Basic セットアップと Standard セットアップの違いを整理する</title>
+      <link>https://blog.jbs.co.jp/entry/2026/11/11/100702?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/11/11/100702?via=curation</guid>
+      <pubDate>Wed, 11 Nov 2026 01:57:11 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft FoundryのBasicとStandardのセットアップの違いやデプロイ手順がわかり、エージェント環境を構築する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;Microsoft Foundry で Foundry Agent Service を使い始めるときに、最初に決めることになるのが Basic セットアップと Standard セットアップの選択です。名前だけを見ると価格プランのように思えますが、実際には「エージェントの会話履歴やアップロードファイルをどこに保存するか」を決める環境構成の違いです。 そして、この選択は後から変更できません。例えば、学習用に Basic で作ったプロジェクトをそのまま本番用の Standard へ切り替える、といったことはできず、プロジェクトの作り直しが必要になります。 今回は、Microsoft Foundry&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.11 03:09　新規12件、チェック12件、通過1件、リクエスト2回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-11T0309</link>
