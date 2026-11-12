@@ -5,7 +5,15 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 18:09:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 01:57:33 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.12 10:57　新規7件、チェック7件、通過0件、リクエスト3回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-12T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261112T015733Z</guid>
+      <pubDate>Thu, 12 Nov 2026 01:58:33 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：293件&lt;/p&gt;&lt;p&gt;新規件数：7件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.12 03:09　新規14件、チェック14件、通過3件、リクエスト7回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-12T0309</link>
