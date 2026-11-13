@@ -5,7 +5,23 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 18:09:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 01:57:25 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.13 10:57　新規8件、チェック8件、通過1件、リクエスト2回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-13T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261113T015725Z</guid>
+      <pubDate>Fri, 13 Nov 2026 01:58:25 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：292件&lt;/p&gt;&lt;p&gt;新規件数：8件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automate「HTTP 要求の受信時」トリガーの認証・認可について</title>
+      <link>https://zenn.dev/headwaters/articles/db9125706b3e3b?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/headwaters/articles/db9125706b3e3b?via=curation</guid>
+      <pubDate>Fri, 13 Nov 2026 01:57:25 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power AutomateのHTTPトリガーにおける3つの認証モードの設定手順とPythonによる検証コードが示されており、API構築時のアクセス制御の実装に活用できる。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;執筆日 2026/11/12 はじめに Power Automateには「HTTP 要求の受信時」というトリガーがあります。 端的に言うと、Power AutomateでAPIを作れる機能です。 ただし、誰でも呼び出せる状態のままでは困ります。そこで今回は、このトリガーで呼び出し元をどこまで制限できるのかを、実際にトークンを付けて呼び出しながら確かめます。 3つのモード フローをトリガーできるユーザーには、次の3つのモードがあります。 モード 呼び出せる相手 チェックされるもの 誰でも URLを知っている人なら誰でも URLのsig=（署名） 自分のテナン...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.13 03:09　新規7件、チェック7件、通過1件、リクエスト6回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-13T0309</link>
