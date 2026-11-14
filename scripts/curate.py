@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
@@ -41,7 +42,26 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 
 
 class QuotaExhausted(Exception):
-    """Gemini APIの上限エラーが再試行しても解消しなかった。"""
+    """Gemini APIを続けられない。kind: "limit"(1回の呼び出し上限) / "gemini_error"(503等が再試行しても解消しない)。"""
+
+    def __init__(self, message, kind="gemini_error"):
+        super().__init__(message)
+        self.kind = kind
+
+
+def abort_reason(exc):
+    """中断の理由を、完了報告に書く短い文言にする。"""
+    if isinstance(exc, QuotaExhausted):
+        if exc.kind == "limit":
+            return "上限到達"
+        return "Gemini障害(%s)" % exc
+    if isinstance(exc, (TimeoutError, socket.timeout)):
+        return "タイムアウト"
+    if isinstance(exc, urllib.error.HTTPError):
+        return "Gemini障害(HTTP %s)" % exc.code
+    if isinstance(exc, urllib.error.URLError):
+        return "通信エラー"
+    return "想定外エラー(%s)" % type(exc).__name__
 
 
 # ---------- 記事の取得・正規化 ----------
@@ -335,16 +355,22 @@ def pending_extra_articles(pending, fetched):
     return extras
 
 
-def report_title(jst, new_count, fetch_limit, checked, passed, calls, check_over_limit=True):
+def report_title(jst, new_count, fetch_limit, checked, passed, calls, check_over_limit=True,
+                 retries=0, abort=""):
     over = bool(check_over_limit and fetch_limit and new_count >= fetch_limit)
     new_txt = f"新規{new_count}件" + ("（上限超）" if over else "")
+    req_txt = f"リクエスト{calls}回" + (f"（再試行{retries}回）" if retries else "")
+    abort_txt = f"、中断：{abort}" if abort else ""
     return (f"【完了報告】{jst.strftime('%Y.%m.%d %H:%M')}　"
-            f"{new_txt}、チェック{checked}件、通過{passed}件、リクエスト{calls}回")
+            f"{new_txt}、チェック{checked}件、通過{passed}件、{req_txt}{abort_txt}")
 
 
-def report_description(fetched, seen_count, new_count, fetch_limit, skipped, pending_judged=0, pending_left=0):
+def report_description(fetched, seen_count, new_count, fetch_limit, skipped, pending_judged=0, pending_left=0,
+                       retries=0, abort=""):
     lines = [
         "Gemini選別の実行結果です。",
+        f"実行状態：{'中断（' + abort + '）。判定できた分までを保存しました' if abort else '正常終了'}",
+        f"Gemini再試行回数（上限に数えない）：{retries}回",
         f"取得件数：{fetched}件",
         f"処理済み件数：{seen_count}件",
         f"新規件数：{new_count}件",
@@ -375,12 +401,13 @@ class Gemini:
     def __init__(self, api_key, settings):
         self.key = api_key
         self.s = settings
-        self.calls = 0
+        self.calls = 0      # 正常に応答があった呼び出し（上限に数える）
+        self.retries = 0    # 503等で再試行した回数（上限に数えない）
         self._last = 0.0
 
     def generate_json(self, prompt):
         if self.calls >= self.s["max_api_calls_per_run"]:
-            raise QuotaExhausted("max_api_calls_per_run reached")
+            raise QuotaExhausted("max_api_calls_per_run reached", kind="limit")
         url = (
             "https://generativelanguage.googleapis.com/v1beta/models/"
             f"{urllib.parse.quote(self.s['model'])}:generateContent"
@@ -399,14 +426,15 @@ class Gemini:
                 headers={"Content-Type": "application/json", "x-goog-api-key": self.key},
             )
             try:
-                self.calls += 1
                 with urllib.request.urlopen(req, timeout=120) as resp:
                     payload = json.load(resp)
+                self.calls += 1  # 応答があった呼び出しだけ数える
                 text = payload["candidates"][0]["content"]["parts"][0]["text"]
                 return json.loads(text)
             except urllib.error.HTTPError as e:
                 if e.code in (429, 500, 503):
-                    log.warning("Gemini HTTP %s (attempt %d)", e.code, attempt + 1)
+                    self.retries += 1  # 再試行は上限に数えず、別カウントにする
+                    log.warning("Gemini HTTP %s (attempt %d, retries=%d)", e.code, attempt + 1, self.retries)
                     if attempt < self.s["max_retries"]:
                         time.sleep(self.s["retry_wait_seconds"] * (attempt + 1))
                         continue
@@ -517,9 +545,13 @@ def run_stage1(gemini, criteria, articles, settings, seen, now):
     return passed, scores
 
 
-def run_stage2(gemini, criteria, passed, settings, seen, now):
-    """2次確認。コメント付きで採用する記事を返す。"""
-    accepted, scores, body_ok, body_ng = [], [], 0, 0
+def run_stage2(gemini, criteria, passed, settings, seen, now, accepted=None):
+    """2次確認。コメント付きで採用する記事を返す。
+
+    採用した記事は1件ごとに accepted へ入れる（途中で中断しても呼び出し側に残る）。"""
+    if accepted is None:
+        accepted = []
+    scores, body_ok, body_ng = [], 0, 0
     for a in passed:
         body = fetch_body(a.url, settings)
         if body:
@@ -700,20 +732,19 @@ def main():
         log.info("1回の上限により翌日以降に回す: %d件", deferred)
 
     gemini = Gemini(api_key, settings)
-    accepted, aborted = [], False
+    accepted, aborted, abort_txt = [], False, ""
     try:
         passed, scores1 = run_stage1(gemini, criteria, articles, settings, seen, now)
         log.info("1次選別: 判定%d件 / 通過%d件 / 点数 %s", len(scores1), len(passed), score_summary(scores1))
-        accepted, scores2, ok, ng = run_stage2(gemini, criteria, passed, settings, seen, now)
+        _, scores2, ok, ng = run_stage2(gemini, criteria, passed, settings, seen, now, accepted)
         log.info("2次確認: 判定%d件 / 採用%d件 / 点数 %s (本文取得 成功%d / 失敗%d)",
                  len(scores2), len(accepted), score_summary(scores2), ok, ng)
-    except QuotaExhausted as e:
+    except Exception as e:  # 上限・503・タイムアウト・想定外のエラーはすべて「中断」として扱い、保存まで進む
         aborted = True
-        log.warning("Gemini上限のため中断しました (%s)。未処理分は翌日に回します", e)
-    except urllib.error.HTTPError as e:
-        aborted = True
-        log.error("Gemini APIエラー HTTP %s のため中断しました", e.code)
-    log.info("Gemini呼び出し: %d回", gemini.calls)
+        abort_txt = abort_reason(e)
+        log.warning("中断しました: %s (%s)。採用済み%d件を含め、ここまでの結果を保存します。未処理分は翌日に回します",
+                    abort_txt, type(e).__name__, len(accepted))
+    log.info("Gemini呼び出し: %d回（再試行 %d回は別カウント）", gemini.calls, gemini.retries)
 
     # 中断時も、ここまでに確定した分は保存する
     # （採用記事は2次確認の最中に処理済みになっているため、フィードも必ず更新する）
@@ -729,14 +760,16 @@ def main():
     jst = now.astimezone(timezone(timedelta(hours=9)))
     report = {
         "title": report_title(jst, new_count, settings.get("fetch_limit"), len(articles),
-                              len(accepted), gemini.calls, check_over_limit=not reeval),
+                              len(accepted), gemini.calls, check_over_limit=not reeval,
+                              retries=gemini.retries, abort=abort_txt),
         "link": add_link_param(settings["feed_link"], "run=" + jst.strftime("%Y-%m-%dT%H%M")),
         "guid": settings["feed_link"] + "#report-" + now.strftime("%Y%m%dT%H%M%SZ"),
         # 同じ回の記事より新しくして、Inoreaderで完了報告が記事より上に出るようにする
         "pubDate": format_datetime(now + timedelta(minutes=settings.get("report_pubdate_offset_minutes", 1))),
         "description": report_description(len(fetched), seen_cnt, new_count,
                                           settings.get("fetch_limit"), skipped,
-                                          pending_judged, len(pending)),
+                                          pending_judged, len(pending),
+                                          retries=gemini.retries, abort=abort_txt),
         "category": "完了報告",
     }
 
@@ -761,6 +794,7 @@ def main():
             "input": len(articles),
             "accepted": len(accepted),
             "calls": gemini.calls,
+            "retries": gemini.retries,
             "aborted": aborted,
         }
         # 同じ日付（JST）のエントリは上書きし、1日1行にする

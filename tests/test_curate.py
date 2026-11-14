@@ -220,5 +220,117 @@ class T(unittest.TestCase):
         self.assertEqual((len(acc), scores, ng), (1, [3, 4], 2))
 
 
+class AbortSaveTests(unittest.TestCase):
+    """中断しても採用済みの記事が保存される・再試行は上限に数えない・理由が報告に出る。"""
+
+    def _run_main(self, stage2_effects, calls_cap=None, retries=0):
+        import json
+        import os
+        import tempfile
+        import unittest.mock as m
+        from email.utils import format_datetime as fd
+
+        now = datetime.now(timezone.utc)
+        items = "".join(
+            f"<item><title>記事{i}</title><link>https://example.com/{i}</link>"
+            f"<description>s</description><pubDate>{fd(now - timedelta(hours=1, minutes=i))}</pubDate></item>"
+            for i in range(4))
+        feed = f'<?xml version="1.0"?><rss version="2.0"><channel>{items}</channel></rss>'.encode()
+        effects = list(stage2_effects)
+
+        class FakeGemini:
+            def __init__(self, key, settings):
+                self.calls = 0
+                self.retries = retries
+
+            def generate_json(self, prompt):
+                if "各記事について次をJSON配列" in prompt:
+                    self.calls += 1
+                    return [{"id": i, "relevant": True, "practical": True, "areas": ["md"], "score": 5}
+                            for i in range(4)]
+                eff = effects.pop(0)
+                if isinstance(eff, Exception):
+                    raise eff
+                self.calls += 1
+                return {"keep": True, "areas": ["md"], "score": 5, "comment": "コメント"}
+
+        tmp = Path(tempfile.mkdtemp())
+        (tmp / "state").mkdir()
+        (tmp / "docs").mkdir()
+        env = {"INOREADER_FEED_URL": "https://x.example/feed", "GEMINI_API_KEY": "k"}
+        with m.patch.dict(os.environ, env), \
+                m.patch.object(curate, "SEEN_PATH", tmp / "state" / "seen.json"), \
+                m.patch.object(curate, "PENDING_PATH", tmp / "state" / "pending.json"), \
+                m.patch.object(curate, "FEED_PATH", tmp / "docs" / "feed.xml"), \
+                m.patch.object(curate, "http_get", return_value=(feed, "utf-8")), \
+                m.patch.object(curate, "fetch_body", return_value=None), \
+                m.patch.object(curate, "Gemini", FakeGemini):
+            self.assertEqual(curate.main(), 0)
+        xml = (tmp / "docs" / "feed.xml").read_text(encoding="utf-8")
+        seen = json.loads((tmp / "state" / "seen.json").read_text(encoding="utf-8"))
+        return xml, seen
+
+    def test_A_limit_in_stage2_keeps_accepted(self):
+        xml, seen = self._run_main([None, None, curate.QuotaExhausted("max_api_calls_per_run reached", kind="limit")])
+        self.assertEqual(xml.count("<category>MDファイル運用</category>"), 2)  # 採用2件がfeedに載る
+        self.assertIn("中断：上限到達", xml)
+        self.assertIn("通過2件", xml)
+
+    def test_C_timeout_in_stage2_saves_and_reports_reason(self):
+        xml, seen = self._run_main([None, TimeoutError("The read operation timed out")], retries=2)
+        self.assertEqual(xml.count("<category>MDファイル運用</category>"), 1)
+        self.assertIn("中断：タイムアウト", xml)
+        self.assertIn("再試行2回", xml)
+        self.assertEqual(len(seen["items"]), 1)  # 判定済みの1件だけ処理済み。残りは翌回
+
+    def test_normal_run_has_no_abort_text(self):
+        xml, _ = self._run_main([None, None, None, None])
+        self.assertNotIn("中断", xml.replace("実行状態：正常終了", ""))
+        self.assertIn("実行状態：正常終了", xml)
+
+    def test_B_503_is_counted_as_retries_not_calls(self):
+        import json
+        import unittest.mock as m
+        import urllib.error
+        import io
+        settings = {"max_api_calls_per_run": 100, "max_retries": 3, "retry_wait_seconds": 0,
+                    "min_seconds_between_calls": 0, "model": "x"}
+        g = curate.Gemini("k", settings)
+        err = urllib.error.HTTPError("u", 503, "unavailable", {}, io.BytesIO(b""))
+        with m.patch.object(curate.urllib.request, "urlopen", side_effect=err), \
+                m.patch.object(curate.time, "sleep"):
+            with self.assertRaises(curate.QuotaExhausted) as cm:
+                g.generate_json("p")
+        self.assertEqual((g.calls, g.retries, cm.exception.kind), (0, 4, "gemini_error"))
+        self.assertEqual(curate.abort_reason(cm.exception), "Gemini障害(HTTP 503)")
+
+    def test_B_success_counts_calls(self):
+        import json
+        import unittest.mock as m
+        settings = {"max_api_calls_per_run": 1, "max_retries": 3, "retry_wait_seconds": 0,
+                    "min_seconds_between_calls": 0, "model": "x"}
+        g = curate.Gemini("k", settings)
+        body = json.dumps({"candidates": [{"content": {"parts": [{"text": "[1]"}]}}]}).encode()
+
+        class Resp:
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+            def read(self, *a): return body
+        with m.patch.object(curate.urllib.request, "urlopen", return_value=Resp()), \
+                m.patch.object(json, "load", side_effect=lambda r: json.loads(body)):
+            self.assertEqual(g.generate_json("p"), [1])
+            with self.assertRaises(curate.QuotaExhausted) as cm:
+                g.generate_json("p")
+        self.assertEqual((g.calls, cm.exception.kind), (1, "limit"))
+        self.assertEqual(curate.abort_reason(cm.exception), "上限到達")
+
+    def test_report_title_abort_and_retries(self):
+        jst = datetime(2026, 11, 14, 2, 38)
+        t = curate.report_title(jst, 267, 300, 267, 0, 100, retries=15, abort="上限到達")
+        self.assertIn("リクエスト100回（再試行15回）、中断：上限到達", t)
+        t = curate.report_title(jst, 28, 300, 26, 6, 9)
+        self.assertTrue(t.endswith("リクエスト9回"))
+
+
 if __name__ == "__main__":
     unittest.main()
