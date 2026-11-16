@@ -100,9 +100,9 @@
   },
   {
     "date": "2026-11-16",
-    "input": 7,
+    "input": 4,
     "accepted": 0,
-    "calls": 1,
+    "calls": 3,
     "retries": 0,
     "aborted": false
   }
