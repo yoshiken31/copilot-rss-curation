@@ -5,7 +5,31 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:56:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 18:09:07 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.17 03:09　新規5件、チェック5件、通過2件、リクエスト3回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-17T0309</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261116T180907Z</guid>
+      <pubDate>Mon, 16 Nov 2026 18:10:07 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：295件&lt;/p&gt;&lt;p&gt;新規件数：5件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automateの承認フロー設計でよく詰まる3か所——企業展開18件の対処記録</title>
+      <link>https://zenn.dev/sidejob/articles/a30815fbf0ca64a5a?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/sidejob/articles/a30815fbf0ca64a5a?via=curation</guid>
+      <pubDate>Mon, 16 Nov 2026 18:09:07 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power Automateの承認フローで発生するタイムアウト・代理承認・並列承認の具体的な課題と解決策がわかるため、業務自動化の設計時に役立ちます。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;はじめに 大企業でAI・デジタル化推進を担当している。Power Automateの承認フローを構築・展開する案件を18件ほど経験した。毎回同じ場所で詰まる。タイムアウト、代理承認、並列承認のエスカレーション処理だ。 この記事では、繰り返し発生した3か所の問題と、現在使っている対処記録をまとめる。Power Automateのドキュメントに書かれていない運用上のポイントが多いため、設計を始める前に読んでおくと詰まる時間が減るはずだ。 TL;DR（結論）： 承認タイムアウトは「デフォルト30日でよい」は間違い。業務の締め切りと合わせて設定する 代理承認は「承認者が不在の場合」だけでな...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱📝 【Copilot Studio】「行の取得」アクションの実施結果に応じたエージェントのメッセージ形式の設定</title>
+      <link>https://blog.jbs.co.jp/entry/2026/11/16/124030?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/11/16/124030?via=curation</guid>
+      <pubDate>Mon, 16 Nov 2026 18:09:07 +0000</pubDate>
+      <category>アプリ開発／MDファイル運用</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioでデータ取得結果の成否に応じてメッセージ形式を分岐させる手順がわかり、チャットボットの応答制御を実装する場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・MDファイル運用 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;前回は、「行の取得」アクションのエージェントフローを活用したエージェント作成について説明しました。 blog.jbs.co.jp 過去の記事の設定では、エージェントが回答するメッセージはAIが自動的に生成する文章でした。 AIが自動的に生成する文章では、その都度生成される文章形式が変わる可能性があります。そのため、あらかじめ生成したい回答形式が決まっている場合は、明示的に回答形式を指定する方が便利です。 ここからは、「行の取得」アクションの実施結果に応じて、エージェントが回答するメッセージの形式を指定する方法を説明します。 なお、本記事はCopilot Studioの基本的な構築が完了しており&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.16 10:56　新規4件、チェック4件、通過0件、リクエスト3回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-16T1056</link>
