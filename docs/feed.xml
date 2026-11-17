@@ -5,7 +5,47 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 01:56:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 18:09:11 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.18 03:09　新規19件、チェック19件、通過4件、リクエスト10回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-18T0309</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261117T180911Z</guid>
+      <pubDate>Tue, 17 Nov 2026 18:10:11 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：281件&lt;/p&gt;&lt;p&gt;新規件数：19件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝📱 AIっぽい日本語を直すスキル yomiyasu-mini を Microsoft Copilot の色々なところで使ってみた</title>
+      <link>https://qiita.com/Oyu3m/items/8efff0925c0994dda6ee?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Oyu3m/items/8efff0925c0994dda6ee?via=curation</guid>
+      <pubDate>Tue, 17 Nov 2026 18:09:11 +0000</pubDate>
+      <category>MDファイル運用／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Agent BuilderやPowerPoint、Coworkへのカスタムスキルの導入手順と検証結果がわかり、資料作成時の文章推敲の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・アプリ開発 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;前提 この記事は2026/11/16時点での公開情報や動作を私なりにまとめたものとなります。 正確な情報はご自身でご確認ください。 AIっぽい日本語を直してくれる「yomiyasu」 Copilot に文章を書かせると、なんだか「AIっぽい日本語」になりますよねえ… 「...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ パワポの1枚に自作の HTML を丸ごと入れてみた</title>
+      <link>https://zenn.dev/yohakucode/articles/powerpoint-interactive-slides-html?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/yohakucode/articles/powerpoint-interactive-slides-html?via=curation</guid>
+      <pubDate>Tue, 17 Nov 2026 18:09:11 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; PowerPointのインタラクティブスライド機能に自作HTMLを埋め込む手順と注意点がわかり、リッチなプレゼン資料を作成する場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;PowerPoint のスライドショーの中で、マウスの後を星くずが追いかけてきます。 動画を貼り付けたわけでも PowerPoint のアニメーション機能を組んだわけでもなく、自作の HTML を1枚分、Copilot のチャット欄に貼っただけです。マウスオーバーで浮き上がる動きもクリックで上がる花火も、HTML に書いた通りに動作しました。 「PowerPoint に HTML を埋め込みたい、助けて」と相談されて方法を探していたところ、PowerPoint の新機能「インタラクティブ スライド」に行き着きました。本来は Copilot に指示して動くスライドを生成してもらう機能です...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Copilotを入れたのにチームで使われない。大企業展開で繰り返し見えてきた理由と対処法</title>
+      <link>https://zenn.dev/sidejob/articles/a35a2e04957f6389e?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/sidejob/articles/a35a2e04957f6389e?via=curation</guid>
+      <pubDate>Tue, 17 Nov 2026 18:09:11 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; 大企業でのMicrosoft 365 Copilotの定着化における失敗要因と具体的な対策がわかるため、社内展開や利用促進を行う場面で役立つ。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;有料版Copilotを全社展開した直後、こんな報告が来た。「月500件は使ってくれると思っていたのに、先月全部合わせて43件でした。」 似た話を、複数の企業のAI推進担当者から聞いている。導入コストと展開の手間をかけた割に、使われていない。数字を見るたびに、何かを間違えた気持ちになる。 本業でCopilot展開に関わり、相談も複数受けてきた立場から、繰り返し見えてきたパターンを整理する。原因のほとんどは「Copilotの機能が弱い」ではなく「使い方の設計がない」だった。 「いつ使えばいいか」が設計されていないと、誰も使わない 導入担当者が陥りやすいのは、「Copilotが何でもできる...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️📱 【Copilotライセンス】社内FAQエージェントの作成</title>
+      <link>https://qiita.com/HikaPico/items/edf4662adbe6129bf7b2?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/HikaPico/items/edf4662adbe6129bf7b2?via=curation</guid>
+      <pubDate>Tue, 17 Nov 2026 18:09:11 +0000</pubDate>
+      <category>DX業務自動化／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 Copilotでの社内FAQエージェント作成手順がわかるため、社内問い合わせ対応の効率化場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化・アプリ開発 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;Copilotで社内FAQエージェントを作成できます エージェントとは、特定の業務に合わせて回答ルールや参照する情報を設定した、自分専用のCopilotです。 Microsoft 365 Copilotの追加ライセンスがなくても、利用環境によっては基本的なエージェントを...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.17 10:56　新規10件、チェック10件、通過1件、リクエスト2回（再試行2回）</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-17T1056</link>
