@@ -108,10 +108,10 @@
   },
   {
     "date": "2026-11-17",
-    "input": 5,
-    "accepted": 2,
-    "calls": 3,
-    "retries": 0,
+    "input": 10,
+    "accepted": 1,
+    "calls": 2,
+    "retries": 2,
     "aborted": false
   }
 ]

@@ -5,7 +5,23 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 18:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 01:56:52 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.17 10:56　新規10件、チェック10件、通過1件、リクエスト2回（再試行2回）</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-17T1056</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261117T015652Z</guid>
+      <pubDate>Tue, 17 Nov 2026 01:57:52 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：2回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：290件&lt;/p&gt;&lt;p&gt;新規件数：10件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Copilot Studioで作ったカスタムエージェントをTeamsに展開したら「見えない」——管理者が確認する3か所（2026年）</title>
+      <link>https://qiita.com/Sidejob/items/593cbb84207ec2e65838?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/593cbb84207ec2e65838?via=curation</guid>
+      <pubDate>Tue, 17 Nov 2026 01:56:52 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioで作ったエージェントがTeamsに表示されない原因と、管理センターでの3つの確認箇所・手順がわかり、展開時のトラブルシューティングに使える。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;Copilot Studioでエージェントを作って、いざTeamsで使おうとしたら「アプリが見つかりません」。作った本人のアカウントには表示されるのに、展開先の部署のメンバーには出てこない——そういう問い合わせが、Copilot展開を進めていると必ず来る。 社内のCopil...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.17 03:09　新規5件、チェック5件、通過2件、リクエスト3回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-17T0309</link>
