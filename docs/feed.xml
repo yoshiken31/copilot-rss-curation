@@ -5,7 +5,23 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 18:09:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 01:57:37 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.18 10:57　新規7件、チェック7件、通過1件、リクエスト2回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-18T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261118T015737Z</guid>
+      <pubDate>Wed, 18 Nov 2026 01:58:37 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：293件&lt;/p&gt;&lt;p&gt;新規件数：7件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ 【Power Automate】Teamsのプライベートチャネルの既存スレッドへ、タグメンション付きで定期返信する</title>
+      <link>https://qiita.com/valpasucucci43/items/681dfa6537bf13dfd075?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/valpasucucci43/items/681dfa6537bf13dfd075?via=curation</guid>
+      <pubDate>Wed, 18 Nov 2026 01:57:37 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power AutomateとMicrosoft Graphを利用し、Teamsのプライベートチャネルの既存スレッドにタグメンション付きで定期返信する手順がわかる。Teamsを用いた定例業務のリマインド自動化に使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに Microsoft Teams（以下、Teams）のプライベートチャネルで、次のような定期リマインドを自動化したい場面がありました。 毎週決まった日時に投稿する プライベートチャネル内のタグをメンションする 新しいスレッドを毎回作らず、既存スレッドへ返信する ...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.18 03:09　新規19件、チェック19件、通過4件、リクエスト10回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-18T0309</link>
