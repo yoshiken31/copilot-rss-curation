@@ -5,7 +5,47 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 01:57:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 18:09:20 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.21 03:09　新規21件、チェック18件、通過4件、リクエスト5回（再試行1回）</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-21T0309</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261120T180920Z</guid>
+      <pubDate>Fri, 20 Nov 2026 18:10:20 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：1回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：279件&lt;/p&gt;&lt;p&gt;新規件数：21件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️🪙 Work IQ に仕事のデータを入れて Codex から聞いてみた【動作結果編】</title>
+      <link>https://zenn.dev/uniale/articles/9237ae62fea56d?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/uniale/articles/9237ae62fea56d?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 18:09:20 +0000</pubDate>
+      <category>DX業務自動化／トークン節約</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Work IQとCodexを連携させたデータ検証結果やコスト実績がわかり、Microsoft 365の横断検索や要約機能を検証する場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化・トークン節約 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;導入編では、個人で契約した Microsoft 365 テナントに Work IQ を有効化し、Codex から MCP 経由で叩けるところまで構築しました。ただ、あの時点ではテナントが空っぽで、Work IQ に聞いても業務データは無いという回答しか返ってきませんでした。 この動作結果編では、検証用の仕事データ（種データ）を投入し、実際にどこまで使えるのかを6つのシナリオで試します。結論を先に言うと、横断検索と要約は想像以上に実用的で、一方で「書かれていないことは分からない」という限界もはっきりしました。 1. 入れた種データ 実在の業務データは使えないので、架空の新製品発売準備プ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️📱 Work IQ を個人テナントで契約して Codex から使うまで全部やった【導入編】</title>
+      <link>https://zenn.dev/uniale/articles/461eff349e30b5?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/uniale/articles/461eff349e30b5?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 18:09:20 +0000</pubDate>
+      <category>DX業務自動化／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; 個人テナントでのWork IQの導入手順と、サービスプリンシパル作成のエラー解決方法がわかり、検証環境の構築時に役立ちます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化・アプリ開発 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;Microsoft の Work IQ を触ってみたくて、個人で Microsoft 365 テナントを契約して試しました。自分が全体管理者なので、管理者同意も課金設定も全部自分で回せます。 Business Standard + Copilot Business のセットを月契約（月 ¥4,228・税抜）し、Work IQ を CLI と Codex（MCP）から使うところまで一通りやった記録です。詰まった所が3つあり、どれも公式ドキュメントだけでは解けなかったので、その解決まで含めて書きます。 1. Work IQ とは何か Microsoft 365 Copilot の「頭脳...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automateで「成功」なのに何も送られない：3つの原因と確認手順（2026年）</title>
+      <link>https://qiita.com/Sidejob/items/7bed90e905f5e3c98fdc?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/7bed90e905f5e3c98fdc?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 18:09:20 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power Automateの実行履歴が「成功」になる原因と確認手順が分かり、業務フローのトラブルシューティングに使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;対象読者 Power Automateでメール・Teams通知・承認フローを作っている方。実行履歴が「成功」なのに通知が届かなくて困ったことのある方。再発を防ぐ確認手順を体系化したい担当者。 この記事で分かること 「成功」に見えるのに実際には動いていない3つのパターン...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Copilot StudioのAgent accountsとは？専用ID・共有メモリ・トリガーで継続業務を任せる前に</title>
+      <link>https://qiita.com/phamxuanquyen22/items/5bcbe0d5bcf18bec04d4?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/5bcbe0d5bcf18bec04d4?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 18:09:20 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot StudioのAgent accounts機能の仕様や共有メモリの制限がわかり、チームの定例業務を自動化するエージェントの設計検証で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月20日時点の情報です。Microsoft Copilot StudioのAgent accountsとメモリは更新が速い機能のため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. 担当者が不在でも、チームの定例...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.20 10:57　新規23件、チェック22件、通過3件、リクエスト7回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-20T1057</link>
