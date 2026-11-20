@@ -5,7 +5,39 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 18:08:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 01:57:43 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.20 10:57　新規23件、チェック22件、通過3件、リクエスト7回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-20T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261120T015743Z</guid>
+      <pubDate>Fri, 20 Nov 2026 01:58:43 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：277件&lt;/p&gt;&lt;p&gt;新規件数：23件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：15件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ ASCII.jp：自分だけのAIエージェントををサクッっと作る！ Microsoft 365 Copilot「Agent Builder ...</title>
+      <link>https://ascii.jp/elem/000/004/446/4446236?via=curation</link>
+      <guid isPermaLink="true">https://ascii.jp/elem/000/004/446/4446236?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 01:57:43 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 CopilotのAgent Builderを使った営業支援用エージェントの具体的なプロンプト設定と作成手順がわかり、SI営業の案件整理や社内共有の効率化に活用できる。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: ascii.jp&lt;/p&gt;&lt;p&gt;Webブラウザーを起動し、以下のURLにアクセスします。 https:// m365 .cloud.microsoft/ 左側のウィンドウで、「新しいエージェントの作成」を選択します ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ 生成AIの個人活用から組織活用へ 森トラストのAIエージェント人材育成事例を公開</title>
+      <link>https://www.persol-innovation.co.jp/news/2026-1124-1?via=curation</link>
+      <guid isPermaLink="true">https://www.persol-innovation.co.jp/news/2026-1124-1?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 01:57:43 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft Copilot Studioを活用した業務課題の可視化と部門単位の改善手順がわかり、組織でのAIエージェント人材育成や業務改善を検討する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: www.persol-innovation.co.jp&lt;/p&gt;&lt;p&gt;Microsoft Copilot Studio で業務課題を可視化し、部門単位の業務改善を推進. 「はたらいて、笑おう。」をビジョンに掲げるパーソルグループのパーソル ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ 【朗報】Microsoft 365 CopilotがOneDriveのファイルを直接編集できるようになってた！CoworkなしでGitHub Copilotみたいに使える件</title>
+      <link>https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?via=curation</guid>
+      <pubDate>Fri, 20 Nov 2026 01:57:43 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft 365 Copilotのプロジェクト機能とOneDriveを連携させ、既存ファイルを直接編集・管理させる手順がわかり、社内のナレッジ共有や作業自動化の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;はじめに Microsoft 365 Copilotくん、いつの間にかめちゃくちゃ進化していました。 以前、Copilotのカスタム指示とOneDriveを組み合わせて、AIに自分専用の知識を蓄積させる仕組みを考えていました。 ただ、当時はファイルの保存先や既存ファイルの...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.20 03:08　新規15件、チェック15件、通過0件、リクエスト0回（再試行4回）、中断：Gemini障害(HTTP 503)</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-20T0308</link>
