@@ -148,10 +148,10 @@
   },
   {
     "date": "2026-11-22",
-    "input": 7,
+    "input": 1,
     "accepted": 1,
     "calls": 2,
-    "retries": 2,
+    "retries": 0,
     "aborted": false
   }
 ]
