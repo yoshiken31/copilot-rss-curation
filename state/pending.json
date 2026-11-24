@@ -1,1 +1,177 @@
-{}
+{
+ "http://www.excite.co.jp/news/article/Prtimes_2026-11-24-71591-730": {
+  "published": "2026-11-24T13:08:11+00:00",
+  "since": "2026-11-24",
+  "source": "www.excite.co.jp",
+  "summary": "～Microsoft Copilot Studio で業務課題を可視化し、部門単位の業務改善を推進～ 「はたらいて、笑おう。」をビジョンに掲げるパーソルグループのパーソル ...",
+  "title": "生成AIの個人活用から組織活用へ森トラストのAIエージェント人材育成事例を公開 - エキサイト"
+ },
+ "https://blog.jbs.co.jp/entry/2026/11/24/104425": {
+  "published": "2026-11-24T02:19:04+00:00",
+  "since": "2026-11-24",
+  "source": "blog.jbs.co.jp",
+  "summary": "本記事では、Microsoft Agent Framework（以下、Agent Framework）でワークフローを実装し、そのコードを Microsoft Foundry の Hosted Agent として実行します。長時間実行エージェントを作成し、承認待ちで待機させた際の挙動と、異常終了から復旧した際の挙動を紹介します。",
+  "title": "Microsoft FoundryのHosted Agent（Microsoft Agent Framework）で長時間実行用のエージェントを構成する"
+ },
+ "https://dxmagazine.jp/news/2665ko23": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "dxmagazine.jp",
+  "summary": "Microsoftの Copilot Studio 公式ガイドは、エージェントフローの複数段階承認で、人による承認とAIによる承認を組み合わせられると案内しています。AIは指示や ...",
+  "title": "【いつものTeamsやOutlookで承認できる】AIの作業の最後に「担当者の確認」を入れるCopilot ..."
+ },
+ "https://dxmagazine.jp/news/2665ko40-2": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "dxmagazine.jp",
+  "summary": "... Copilot Studio の新機能 · 新着記事一覧へ. ピックアップ. セミナー. 2026.10.29. 非公開: 【11/20開催】あなたのブランド、AIの答えに入っていますか？～自社の ...",
+  "title": "【空港で預けたスーツケースがもっと安全・スムーズに運ばれる未来へ】ロボットが「置く前に荷 ..."
+ },
+ "https://dxmagazine.jp/news/2665ko40-3": {
+  "published": "2026-11-24T15:06:10+00:00",
+  "since": "2026-11-24",
+  "source": "dxmagazine.jp",
+  "summary": "... Copilot Studio の新機能 · ニュース. ニュース. 2026.11.24. 【地元のデジタル商品券や地域通貨がもっと便利になる！】お買い物の記録を活かして商店街の ...",
+  "title": "【診察の待ち時間短縮やより安心な医療につながる一歩】医療現場の調べる手間をぐっと減らす"
+ },
+ "https://mainichi.jp/articles/20261124/pr2/00m/020/644000c": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "mainichi.jp",
+  "summary": "昨年来、Microsoft Copilot Studio との統合を予定していることを発表していました。この統合を通じて、組織は、保護、ガバナンス、コンプライアンス、脅威 ...",
+  "title": "プレスリリース：チェック・ポイント、Microsoftとの協業を拡大しMicrosoft Azure上でCheck Point ..."
+ },
+ "https://news.infoseek.co.jp/article/prtimes_000000096_000159338": {
+  "published": "2026-11-24T13:08:11+00:00",
+  "since": "2026-11-24",
+  "source": "news.infoseek.co.jp",
+  "summary": "ハンズオン Copilot Studio 活用セミナー. PR TIMES(2026年11月21日 5時10分) · クオーク、LMS ...",
+  "title": "【e-Learningシステム：Learn365_v.3.80アップグレードのお知らせ】株式会社ソフィア - Infoseek"
+ },
+ "https://news.microsoft.com/source/asia/features/microsoft-ignite-2026?lang=ja": {
+  "published": "2026-11-24T15:06:10+00:00",
+  "since": "2026-11-24",
+  "source": "news.microsoft.com",
+  "summary": "MAI Transcribe 2 を基盤とする Dragon Copilot Transcribe は、Dragon Copilot ... Studio 採用情報 会社のニュース マイクロソフトにおけるプライバシー ...",
+  "title": "世界トップクラスの性能を、大規模に活用できる価格で提供する 7 つの新モデル - Source Asia"
+ },
+ "https://prtimes.jp/main/html/rd/p/000000096.000159338.html": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "prtimes.jp",
+  "summary": "プレスリリース. もっと見る · 【11月26日㈭開催】採用・研修・労務の業務をAIで効率化！ハンズオン Copilot Studio 活用セミナー. 2026年11月19日 18時00分. 【11 ...",
+  "title": "【e-Learningシステム：Learn365_v.3.80アップグレードのお知らせ】株式会社ソフィア - PR TIMES"
+ },
+ "https://prtimes.jp/main/html/rd/p/000000218.000124841.html": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "prtimes.jp",
+  "summary": "... Copilot Studio 定着支援伴走ヘルプデスクサービス」を提供開始. 2026年10月6日 19時00分. パーソルビジネスプロセスデザイン、三十三銀行と三重県内の中小企業 ...",
+  "title": "パーソルビジネスプロセスデザイン、大塚商会と業務提携中堅・中小企業の人材不足や属人化の ..."
+ },
+ "https://prtimes.jp/main/html/rd/p/000000730.000071591.html": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "prtimes.jp",
+  "summary": "～Microsoft Copilot Studio で業務課題を可視化し、部門単位の業務改善を推進～. パーソルイノベーション株式会社. 2026年11月24日 11時00分.",
+  "title": "生成AIの個人活用から組織活用へ森トラストのAIエージェント人材育成事例を公開 - PR TIMES"
+ },
+ "https://qiita.com/phamxuanquyen22/items/20eb5efc3ef01995e6b9": {
+  "published": "2026-11-24T05:29:23+00:00",
+  "since": "2026-11-24",
+  "source": "qiita.com",
+  "summary": "執筆している2026年11月24日時点の情報です。Microsoft Copilotのモデル対応は更新が速いため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. 新モデルが出たら、すぐ全員が使える？ 「Copilotに新しいGPTモデルが...",
+  "title": "Microsoft CopilotにGPT-6.2 Sol／Astra登場！使える場所と管理者が確認したい導入条件"
+ },
+ "https://qiita.com/phamxuanquyen22/items/253fb160c8ff6ac54da2": {
+  "published": "2026-11-24T05:29:23+00:00",
+  "since": "2026-11-24",
+  "source": "qiita.com",
+  "summary": "執筆している2026年11月24日時点の情報です。OneDriveとCopilotは更新が速いため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. ファイルを探すだけで、月次報告の時間が過ぎてしまう 今月の集計、先月の報告、会議のメモ。必...",
+  "title": "OneDriveのCopilotでファイル分析・整理・スキル化！一般提供の経緯と月次業務での使い方"
+ },
+ "https://qiita.com/phamxuanquyen22/items/6aa30407aa2c0de9d613": {
+  "published": "2026-11-24T05:29:23+00:00",
+  "since": "2026-11-24",
+  "source": "qiita.com",
+  "summary": "執筆している2026年11月24日時点の情報です。Microsoft CopilotとSalesforceの連携は更新が速いため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. 商談の事実は、CRMだけに入っている？ 商談の金額と段階はS...",
+  "title": "SalesforceがMicrosoft Copilotにつながる！Copilotforceの営業スキル・承認・導入条件を整理"
+ },
+ "https://voix.jp/business-cards/checkpoint-microsoft-sase-expansion": {
+  "published": "2026-11-24T15:06:10+00:00",
+  "since": "2026-11-24",
+  "source": "voix.jp",
+  "summary": "また、Microsoft Copilot Studio との統合も予定しています。この統合により、組織は保護、ガバナンス、コンプライアンス、脅威防止機能を備えた生成AI ...",
+  "title": "チェック・ポイントとMicrosoftが連携強化、Azure上でSASEプラットフォームを拡大し企業の ..."
+ },
+ "https://voix.jp/business-cards/moritrust-ai-agent-training": {
+  "published": "2026-11-24T13:08:11+00:00",
+  "since": "2026-11-24",
+  "source": "voix.jp",
+  "summary": "研修には約30名の社員が参加し、業務課題の整理やAIエージェントの企画・設計、Microsoft Copilot Studio を活用したデモ開発に取り組みました。2日間の集合 ...",
+  "title": "森トラストの生成AIエージェント導入研修がもたらす組織変革の実績と展望 - VOIX"
+ },
+ "https://www.ibm.com/jp-ja/new/announcements/ibm-won-microsoft-japan-partner-of-the-year-awards-2026": {
+  "published": "2026-11-24T06:19:18+00:00",
+  "since": "2026-11-24",
+  "source": "www.ibm.com",
+  "summary": "Imagine Enterpriseは、Microsoft Foundry、GitHub Copilot、Microsoft Copilot Studio 、Microsoft Fabric、Microsoft 365、Microsoft Entra、Microsoft ...",
+  "title": "Microsoftアワードを4年連続受賞 - IBM"
+ },
+ "https://www.itmedia.co.jp/enterprise/articles/2611/24/news014.html": {
+  "published": "2026-11-24T13:08:11+00:00",
+  "since": "2026-11-24",
+  "source": "www.itmedia.co.jp",
+  "summary": "Copilot Studio 内製化を定着させる実践論. 過去の連載記事が 42 件あります. CIO・クラウド戦略. 関連リンク. ITmediaエンタープライズ まとめ読みeBook.",
+  "title": "「AIで不要になる」は本当か SaaS、SIer、IT部門のこれから：ITmedia エンタープライズ まとめ ..."
+ },
+ "https://www.microsoft.com/ja-jp/microsoft-cloud/blog/microsoft-in-business/2026/11/24/2026-microsoft-japan-partner-of-the-year-awards": {
+  "published": "2026-11-24T13:08:11+00:00",
+  "since": "2026-11-24",
+  "source": "www.microsoft.com",
+  "summary": "Microsoft AI Microsoft Security Azure Dynamics 365 Microsoft 365 Microsoft Advertising Microsoft Copilot ... Studio 採用情報 会社のニュース ...",
+  "title": "2026 Microsoft Japan Partner of the Year Awards 受賞企業を発表"
+ },
+ "https://zenn.dev/debudebu/articles/copilot-powerpoint-memory-kit": {
+  "published": "2026-11-24T05:42:05+00:00",
+  "since": "2026-11-24",
+  "source": "zenn.dev",
+  "summary": "Copilot in PowerPointで編集を重ねると、色・文字数・画像の有無などがだんだん最初の指示から離れていくことがある。そこで、指示書をPowerPointファイル自体に書いておけば守られ続けるのかを、置き場所ごとに比べる検証キットを作った。この記事では、キットの作り方と使い方をまとめる。 検証キットをダウンロード（テスト用資料・指示書・送る文） ／ 生成・採点スクリプト（Python） ! 実測はこれから このキットは、置き場所ごとの差を測るための道具である。Copilotでの実測結果はまだ載せていない。下の「調査で分かったこと」も公式資料の記載に基づく見立てで、効果を保証...",
+  "title": "Copilot in PowerPointの指示ずれを防ぐ：指示書をファイルに埋め込む検証キット"
+ },
+ "https://zenn.dev/debudebu/books/copilot-powerpoint-guide": {
+  "published": "2026-11-24T05:42:05+00:00",
+  "since": "2026-11-24",
+  "source": "zenn.dev",
+  "summary": "Microsoft 365 Copilot で PowerPoint 資料を作るための実務ガイド。用途に合わせたモデル選び、作成の手順、用途別の構成、コピーして使えるプロンプト、白黒の品質基準に加え、エンジニア向けの論理構成図（50部品・36例と各図の指示書）と、指示を資料に埋め込んでずれを防ぐ検証キットを収録。",
+  "title": "Copilotで作るPowerPoint実務ガイド"
+ },
+ "https://zenn.dev/matsunaopen/articles/ai-behavior-human-oversight": {
+  "published": "2026-11-24T04:25:18+00:00",
+  "since": "2026-11-24",
+  "source": "zenn.dev",
+  "summary": "AIコーディングエージェントに実装を任せると、ファイル編集やコマンド実行のたびに権限確認で作業が止まります。煩わしさから内容を読まずに許可を押し続けたり、確認を外す全許可に逃げたくなったりする場面が増えてきました。 しかし人がすべての権限要求を確認するやり方は、かえって危険な操作を見落とす原因になります。Claude Codeのauto modeやGitHub CopilotのAssisted permissionsのように、実行エージェントとは別のモデル（分類器）を人の手前に挟む仕組みが広がっているのもそのためです。人がAIエージェントに関わる場所は1件ごとの承認から移し、基盤の隔離や...",
+  "title": "AIエージェントの振る舞いに、人はどこで関わるべきか"
+ },
+ "https://zenn.dev/mochan_tk/articles/4b11c778ea63be": {
+  "published": "2026-11-24T04:25:18+00:00",
+  "since": "2026-11-24",
+  "source": "zenn.dev",
+  "summary": "はじめに GitHub Universe 2026 の開催にあわせて、GitHub のデザインチームから、オープンソースのプロトタイピングツール Replica が公開されました。 Replica は、チームのデザインシステム（既存のコンポーネントやパターン、ドキュメント）をベースに、自然言語から動くプロトタイプを作る道具です。GitHub Copilot app の会話の横に開くCanvasで、動作を見ながら直していけます。 気になったので、実際に試してみました。 Replica とは GitHub Design が公開した、MIT ライセンスの AI プロトタイピングツー...",
+  "title": "🚀 GitHub Universe 2026 〜 GitHub のプロトタイピングツール「Replica」〜"
+ },
+ "https://zenn.dev/shoyomayabot/articles/internal-ai-platform-azure-m365": {
+  "published": "2026-11-24T05:42:05+00:00",
+  "since": "2026-11-24",
+  "source": "zenn.dev",
+  "summary": "「社員がAIを安心して使える環境を、社内に用意したい」 こう考えたとき、最初に悩むのがどこに作るかです。よく比べられるのは、次の2つです。 Microsoft 365のCopilot：すでに使っているTeamsやOfficeの中で使う Azureで自前の基盤を作る：Azure OpenAIを閉じたネットワークで使い、チャットのボットから呼ぶ あわせて、よく出る要望があります。「定額で、使い放題にしたい」。従量課金だと、月末にいくらになるか分からないからです。 この記事では、50〜100人くらいの組織を例に、この2つ（と、その中間の案）を比べます。先に結論を書くと、「定額で使い放題...",
+  "title": "社内AI基盤は「閉域のAzure」か「M365のCopilot」か：定額で使い放題はあるのか、小さな組織の選び方"
+ },
+ "https://zenn.dev/syoshida07/articles/ddd94b0f024c5e": {
+  "published": "2026-11-24T05:42:05+00:00",
+  "since": "2026-11-24",
+  "source": "zenn.dev",
+  "summary": "Microsoft Ignite 2026が閉幕しました、昨年度は現地サンフランシスコでCopilotを主軸として生成AIの進化を見てきましたが、今年の主役は新しいモデルの性能や機能ではなく、Microsoftが示したのは企業がAIエージェントを本番業務で動かし、管理し、投資対効果まで測るための仕組みだと思います。 ただ発表内容を並べるだけでは、その価値は見えません。 そこで主要な4つの発表を「何が出たか → なぜ重要か → 日本企業への影響 → SIerの商機」の順で整理してみました、提供状況は機能ごとに異なるため、その点も併記しています。 今年は残念ながら現地参加できず・・リモート...",
+  "title": "Microsoft Ignite 2026を振り返る AIは「導入」から「運用」のフェーズへ"
+ }
+}
