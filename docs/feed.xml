@@ -5,7 +5,31 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 01:57:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 18:09:29 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.26 03:09　新規21件、チェック19件、通過2件、リクエスト3回（再試行5回）</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-26T0309</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261125T180929Z</guid>
+      <pubDate>Wed, 25 Nov 2026 18:10:29 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：5回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：279件&lt;/p&gt;&lt;p&gt;新規件数：21件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️📱 自動化が2日止まっても「成功」だった——見張りに入れる3か所（2026年）</title>
+      <link>https://qiita.com/Sidejob/items/e6130543f3d7244a5cd2?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/e6130543f3d7244a5cd2?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 18:09:29 +0000</pubDate>
+      <category>DX業務自動化／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power AutomateやCopilot Studioなどの自動化における、成否判定の盲点と監視設計の手順がわかり、運用管理の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化・アプリ開発 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;対象読者 Power Automate・Claude Code・Copilot Studio などのAIツールを使って自動化処理を組んでいる方。特に定期実行（タスクスケジューラ・cron・クラウドフロー）の運用管理をしている方を想定する。 「2日間、何も動いていなかった...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ 社内Copilot展開200人——承認と合意形成に時間がかかった3つの壁（2026年）</title>
+      <link>https://zenn.dev/sidejob/articles/a0f79e797dd6b2cec?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/sidejob/articles/a0f79e797dd6b2cec?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 18:09:29 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; 大企業でのMicrosoft 365 Copilot 200人展開におけるセキュリティ承認の課題と利用率向上の対策がわかり、社内展開や導入計画の立案時に役立ちます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;はじめに（TL;DR） 大企業でMicrosoft Copilot for Microsoft 365を200人以上に展開したときの記録だ。事前に想定していたのと実際の障壁が全然違った。 TL;DR：技術的な設定（テナント設定・ポリシー設定・ライセンス割り当て）は想定よりずっと速かった。一番時間がかかったのは承認のプロセスで、次に時間がかかったのは現場の「納得」だった。比率でいうと、全体の作業時間の60%以上が承認と合意形成に使われた。 展開前のイメージと実際のギャップ 展開前の想定はこうだった：「テナント設定が大変だろう。ポリシーの整合、ライセンスの購入・割り当て、既存の設定と...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.25 10:57　新規38件、チェック37件、通過7件、リクエスト11回（再試行1回）</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-25T1057</link>
