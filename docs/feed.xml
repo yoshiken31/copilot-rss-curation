@@ -5,7 +5,71 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 18:09:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 01:57:36 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.25 10:57　新規38件、チェック37件、通過7件、リクエスト11回（再試行1回）</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-25T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261125T015736Z</guid>
+      <pubDate>Wed, 25 Nov 2026 01:58:36 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：1回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：262件&lt;/p&gt;&lt;p&gt;新規件数：38件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：25件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automateで「毎週月曜に自動で動く仕事レシピ」を設計する——ルーティン化の3つのポイントと実際の構成（2026年）</title>
+      <link>https://qiita.com/Sidejob/items/44d36ec03d77d7d6dd3c?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/44d36ec03d77d7d6dd3c?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power Automateを用いたスケジュール実行フローの設計手法とエラー対策が分かり、定型業務の自動化を進める場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;毎週月曜の朝、同じ作業を手でやっていた。先週のデータをまとめてSharePointに上げて、チームに通知を送って、集計シートを更新する——1時間かかっていた。 Power Automateのスケジュールトリガーで自動化した。今はそのフローが月曜の8時にひとりで動いて、自分は...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝📱 Copilot Studioのエージェント開発をClaude Codeにどこまで任せられるか試した</title>
+      <link>https://zenn.dev/upgradetech/articles/a9a1637d3071c1?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/upgradetech/articles/a9a1637d3071c1?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>MDファイル運用／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Claude Codeを活用してCopilot Studioのエージェント開発をファイル管理し自動化する手順がわかり、開発効率化の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・アプリ開発 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;この記事の想定読者 Copilot Studioのエージェントを画面操作で作っていて、直すたびにどこを変えたのか分からなくなっている方 Claude Codeを使い始めて、コードを書く以外の仕事にも使えないか考えている方 「AIにアプリを作らせる」が実際どこまで通用するのか、判断材料がほしいPM・マネージャーの方 記事を見ながら同じものを自分の環境で作ってみたい方 この記事を読むと、小さなサンプルでClaude Codeにどこまで任せられたのかが分かります。同じものを自分の環境で作る手順も載せています。 1. Copilot Studioのエージェント作りをClaude Co...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🪙⚙️ Copilot検証 第1回：始める前に課金の仕組みを確認した話（Phase 0）</title>
+      <link>https://zenn.dev/uniale/articles/2c8c0ed2453992?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/uniale/articles/2c8c0ed2453992?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>トークン節約／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; M365、Azure、Power PlatformにおけるCopilotの課金体系や上限設定の仕組みがわかる。コスト管理や予期せぬ従量課金を防ぐ検証を行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: トークン節約・DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;! この記事は連載「Business Standard + Copilot でどこまでできるか」の第1回です。 シリーズ目次： 第1回：始める前に課金の仕組みを確認した話（Phase 0）← 本記事 第2回：ユーザー側の実力 — Copilot Chat とアプリ内 Copilot（Phase 1） 第3回：Researcher と Analyst（Phase 2） 第4回：Copilot Studio で作って配る（Phase 3） 第5回：管理者側から見た Copilot（Phase 4） 第6回：Ignite の未来を自宅テナントで確かめた（Frontier の提供状況と Age...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ Copilotで作るPowerPoint実務ガイド</title>
+      <link>https://zenn.dev/debudebu/books/copilot-powerpoint-guide?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/debudebu/books/copilot-powerpoint-guide?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; PowerPoint資料作成のプロンプト集やモデル選定基準がわかり、資料作成の効率化場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;Microsoft 365 Copilot で PowerPoint 資料を作るための実務ガイド。用途に合わせたモデル選び、作成の手順、用途別の構成、コピーして使えるプロンプト、白黒の品質基準に加え、エンジニア向けの論理構成図（50部品・36例と各図の指示書）と、指示を資料に埋め込んでずれを防ぐ検証キットを収録。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ Copilot in PowerPointの指示ずれを防ぐ：指示書をファイルに埋め込む検証キット</title>
+      <link>https://zenn.dev/debudebu/articles/copilot-powerpoint-memory-kit?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/debudebu/articles/copilot-powerpoint-memory-kit?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot in PowerPointの指示ずれを防ぐための検証キットとPythonスクリプトの手順がわかり、プロンプトの挙動を検証する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;Copilot in PowerPointで編集を重ねると、色・文字数・画像の有無などがだんだん最初の指示から離れていくことがある。そこで、指示書をPowerPointファイル自体に書いておけば守られ続けるのかを、置き場所ごとに比べる検証キットを作った。この記事では、キットの作り方と使い方をまとめる。 検証キットをダウンロード（テスト用資料・指示書・送る文） ／ 生成・採点スクリプト（Python） ! 実測はこれから このキットは、置き場所ごとの差を測るための道具である。Copilotでの実測結果はまだ載せていない。下の「調査で分かったこと」も公式資料の記載に基づく見立てで、効果を保証...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ SalesforceがMicrosoft Copilotにつながる！Copilotforceの営業スキル・承認・導入条件を整理</title>
+      <link>https://qiita.com/phamxuanquyen22/items/6aa30407aa2c0de9d613?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/phamxuanquyen22/items/6aa30407aa2c0de9d613?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; SalesforceとMicrosoft Copilotの連携機能であるCopilotforceの概要や提供段階、権限管理の整理が分かり、営業支援ツールの導入検討に役立ちます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;執筆している2026年11月24日時点の情報です。Microsoft CopilotとSalesforceの連携は更新が速いため、最新情報は必ず公開情報（本記事末尾の参考リンク）もあわせてご確認ください。 1. 商談の事実は、CRMだけに入っている？ 商談の金額と段階はS...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱📝 Microsoft FoundryのHosted Agent（Microsoft Agent Framework）で長時間実行用のエージェントを構成する</title>
+      <link>https://blog.jbs.co.jp/entry/2026/11/24/104425?via=curation</link>
+      <guid isPermaLink="true">https://blog.jbs.co.jp/entry/2026/11/24/104425?via=curation</guid>
+      <pubDate>Wed, 25 Nov 2026 01:57:36 +0000</pubDate>
+      <category>アプリ開発／MDファイル運用</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Microsoft Foundryで長時間実行エージェントを構築する手順と承認待ちワークフローの実装方法がわかり、カスタムエージェントの開発場面で使えます。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・MDファイル運用 ／ 情報元: blog.jbs.co.jp&lt;/p&gt;&lt;p&gt;本記事では、Microsoft Agent Framework（以下、Agent Framework）でワークフローを実装し、そのコードを Microsoft Foundry の Hosted Agent として実行します。長時間実行エージェントを作成し、承認待ちで待機させた際の挙動と、異常終了から復旧した際の挙動を紹介します。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.25 03:09　新規25件、チェック25件、通過0件、リクエスト0回（再試行4回）、中断：Gemini障害(HTTP 503)</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-25T0309</link>
