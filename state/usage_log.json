@@ -185,5 +185,13 @@
     "calls": 4,
     "retries": 0,
     "aborted": false
+  },
+  {
+    "date": "2026-11-27",
+    "input": 8,
+    "accepted": 0,
+    "calls": 1,
+    "retries": 0,
+    "aborted": false
   }
 ]
