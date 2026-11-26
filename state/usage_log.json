@@ -180,10 +180,10 @@
   },
   {
     "date": "2026-11-26",
-    "input": 19,
-    "accepted": 2,
-    "calls": 3,
-    "retries": 5,
+    "input": 12,
+    "accepted": 3,
+    "calls": 4,
+    "retries": 0,
     "aborted": false
   }
 ]

@@ -5,7 +5,39 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 18:09:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 01:57:44 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.26 10:57　新規14件、チェック12件、通過3件、リクエスト4回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-26T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261126T015744Z</guid>
+      <pubDate>Thu, 26 Nov 2026 01:58:44 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：286件&lt;/p&gt;&lt;p&gt;新規件数：14件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝🪙 AI Agentとの[契約]に最適化したPromptの書き方。「Task Contract Prompt」 爆誕!</title>
+      <link>https://qiita.com/dahatake/items/148acecf049b45a56b47?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/dahatake/items/148acecf049b45a56b47?via=curation</guid>
+      <pubDate>Thu, 26 Nov 2026 01:57:44 +0000</pubDate>
+      <category>MDファイル運用／トークン節約</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; AIエージェントへの指示出しにおける事前契約（Task Contract）の効果を実験・検証した過程と、プロンプトの改良手法がわかる。エージェントの隠し要件の充足率を高めたい開発現場で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・トークン節約 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;背景 AI Agent に、少し大きめの仕事を任せることが増えました。 便利です。 ただ、任せる仕事が大きくなるほど、依頼文に書いていない判断も増えます。 月の区切りは日本時間なのか、UTC なのか。 金額は税込なのか、税抜なのか。 データがない月は、0 として出すのか、...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ Copilot Studio：「会話の開始」トリガーが発火しない3つの原因と確認手順（2026年）</title>
+      <link>https://qiita.com/Sidejob/items/69054cfa716001e5828e?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/69054cfa716001e5828e?via=curation</guid>
+      <pubDate>Thu, 26 Nov 2026 01:57:44 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioで「会話の開始」トリガーが動かない3つの原因と確認手順がわかり、Teamsへの展開や社内ボット構築のトラブルシューティングに使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;この記事で分かること： Copilot Studioで会話の開始トリガーが動かない3つの主な原因 各原因の確認手順と対処法 社内展開で200人以上に広げた経験から見た、よくある詰まりポイント 対象読者：Copilot Studioを設定して発行したのにBotが動かな...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🪙📱 How to manage costs for Copilot Studio agents</title>
+      <link>https://techcommunity.microsoft.com/t5/copilot-studio-blog/how-to-manage-costs-for-copilot-studio-agents/ba-p/4576413?via=curation</link>
+      <guid isPermaLink="true">https://techcommunity.microsoft.com/t5/copilot-studio-blog/how-to-manage-costs-for-copilot-studio-agents/ba-p/4576413?via=curation</guid>
+      <pubDate>Thu, 26 Nov 2026 01:57:44 +0000</pubDate>
+      <category>トークン節約／アプリ開発</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Copilot Studioのエージェントにおけるクレジット消費量の計測・予測手法や、管理者向けのコスト制御設定がわかり、エージェント運用のコスト管理を行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: トークン節約・アプリ開発 ／ 情報元: techcommunity.microsoft.com&lt;/p&gt;&lt;p&gt;A practical guide to measuring agent consumption, forecasting demand, and managing usage-based costs across maker and admin experiences. The introduction of the Microsoft Copilot harness for Copilot Studio adds to a broader shift toward usage-based billing. Alongside licensing-based costs, teams nee&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.26 03:09　新規21件、チェック19件、通過2件、リクエスト3回（再試行5回）</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-26T0309</link>
