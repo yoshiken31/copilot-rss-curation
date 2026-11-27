@@ -5,7 +5,47 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 01:57:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 18:09:09 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.28 03:09　新規12件、チェック11件、通過4件、リクエスト5回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-28T0309</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261127T180909Z</guid>
+      <pubDate>Fri, 27 Nov 2026 18:10:09 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：288件&lt;/p&gt;&lt;p&gt;新規件数：12件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📱⚙️ 【まさかの自分たちで自作！？】外部に頼まず、社員14人が2カ月で「業務を自動化するAI」を ...</title>
+      <link>https://dxmagazine.jp/news/2665ko230?via=curation</link>
+      <guid isPermaLink="true">https://dxmagazine.jp/news/2665ko230?via=curation</guid>
+      <pubDate>Fri, 27 Nov 2026 18:09:09 +0000</pubDate>
+      <category>アプリ開発／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; 社員14人が2カ月でMicrosoft Copilot Studioを活用して業務自動化エージェントを自作したプロセスがわかり、社内DXやチャットボット内製化の企画立案の場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: アプリ開発・DX業務自動化 ／ 情報元: dxmagazine.jp&lt;/p&gt;&lt;p&gt;参加者は5チームに分かれ、Microsoft Copilot Studio を使い、担当業務の課題に即したエージェントを自ら作りました。特定の仕組みを開発して納品するだけで ...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ CopilotのChatとCowork——社内200人展開で使い分けた判断基準</title>
+      <link>https://qiita.com/Sidejob/items/dac828329c7cdcbd2875?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/Sidejob/items/dac828329c7cdcbd2875?via=curation</guid>
+      <pubDate>Fri, 27 Nov 2026 18:09:09 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; 社内200人への展開におけるChatとCoworkの使い分け基準やFAQ化の効果がわかる。Microsoft 365 Copilotの社内展開や利用案内を担当する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;対象読者 社内でCopilot（Microsoft 365 Copilot）の展開担当になった ChatとCoworkの違いを説明するよう求められた経験がある 利用者からの「どちらを使えばいいか」という質問への答え方を探している 「ChatとCoworkの違いを教え...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝 M365 Copilotのカスタム指示を設定する：毎回の「こう答えて」を減らす</title>
+      <link>https://zenn.dev/tommykazu/articles/m365-copilot-custom-instructions?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/tommykazu/articles/m365-copilot-custom-instructions?via=curation</guid>
+      <pubDate>Fri, 27 Nov 2026 18:09:09 +0000</pubDate>
+      <category>MDファイル運用</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; M365 Copilotのカスタム指示の設定手順と具体的な記入例がわかり、回答の書式や業務前提を固定したい場面で使える。&lt;/p&gt;&lt;p&gt;点数: 5/5 ／ 分野: MDファイル運用 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;M365 Copilotに相談するとき、毎回こんな指示を付けていませんか？ 日本語で、結論から答えてほしい 操作手順は番号付きで書いてほしい 専門用語には短い説明を付けてほしい 情報が足りない場合は、確認事項を示してほしい こうした、繰り返し使う回答の好みを設定できるのがカスタム指示です。 この記事では、M365 Copilotのチャットにカスタム指示を設定する方法と、業務で使うための記入例、反映を確認する手順を紹介します。 設定手順は、2026年11月27日に確認したMicrosoft公式サポートの案内に基づいています。公式資料では「Microsoft Copilot」「Copilot...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📝⚙️ M365 Copilotが期待した回答を返さないときのプロンプト改善例</title>
+      <link>https://zenn.dev/tommykazu/articles/m365-copilot-prompt-troubleshooting?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/tommykazu/articles/m365-copilot-prompt-troubleshooting?via=curation</guid>
+      <pubDate>Fri, 27 Nov 2026 18:09:09 +0000</pubDate>
+      <category>MDファイル運用／DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; M365 Copilotで意図した回答を得るための6つの症状別プロンプト改善例と参照元の指定方法が分かり、資料要約やメール作成を行う場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: MDファイル運用・DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;Microsoft 365 Copilot（以下、M365 Copilot）で資料の要約やメールの下書きを依頼するとき、次のような回答だと、そのまま業務には使いにくいですよね。 要約を頼んだのに、文章が長すぎる 確認したかった資料とは違う資料をもとに回答している 決定事項はあるのに、担当者や期限が抜けている 資料に書かれていない内容まで、確定した事実のように説明している 資料や会議に基づく回答では、まず何を参照して回答してほしいかを明示します。そのうえで、目的・出力形式・不明な情報の扱いを具体化すると、回答の方向性を伝えやすくなります。 この記事では、業務で想定される6つの症状をもとに、...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.27 10:57　新規5件、チェック5件、通過2件、リクエスト3回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-27T1057</link>
