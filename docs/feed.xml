@@ -5,7 +5,31 @@
     <link>https://yoshiken31.github.io/copilot-rss-curation/</link>
     <description>InoreaderのCopilot関連記事をGeminiで選別し、コメントを付けたフィード</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 18:09:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 01:57:08 +0000</lastBuildDate>
+    <item>
+      <title>【完了報告】2026.11.27 10:57　新規5件、チェック5件、通過2件、リクエスト3回</title>
+      <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-27T1057</link>
+      <guid isPermaLink="true">https://yoshiken31.github.io/copilot-rss-curation/#report-20261127T015708Z</guid>
+      <pubDate>Fri, 27 Nov 2026 01:58:08 +0000</pubDate>
+      <category>完了報告</category>
+      <description>&lt;p&gt;Gemini選別の実行結果です。&lt;/p&gt;&lt;p&gt;実行状態：正常終了&lt;/p&gt;&lt;p&gt;Gemini再試行回数（上限に数えない）：0回&lt;/p&gt;&lt;p&gt;取得件数：300件&lt;/p&gt;&lt;p&gt;処理済み件数：295件&lt;/p&gt;&lt;p&gt;新規件数：5件&lt;/p&gt;&lt;p&gt;取得上限：300件&lt;/p&gt;&lt;p&gt;スキップ件数（古い未処理記事）：0件&lt;/p&gt;&lt;p&gt;保留から判定した件数：0件&lt;/p&gt;&lt;p&gt;残っている保留件数：0件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automateの標準コネクタだけで作る2フローと、検証で踏んだ3つの落とし穴</title>
+      <link>https://zenn.dev/ip_technology/articles/d9ac4addb161fa?via=curation</link>
+      <guid isPermaLink="true">https://zenn.dev/ip_technology/articles/d9ac4addb161fa?via=curation</guid>
+      <pubDate>Fri, 27 Nov 2026 01:57:08 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; Power Automateの標準コネクタを使ったTeams連携やFormsの条件分岐の手順がわかる。Microsoft 365環境での業務自動化を進める場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: zenn.dev&lt;/p&gt;&lt;p&gt;技術調査として、Microsoft 365(以下、M365)付帯のPower Automateで2つのフロー(自動化の一連の処理)を作り、サービス間連携の挙動とライセンスの境界を確認しました。結論は次のとおりです。 SharePoint、Teams、Forms、Outlookを標準コネクタ(各サービスと接続する部品)だけでつなげる。Microsoftサービス間なら、概ね想定どおりに動く つまずいたのは、Teamsメッセージの改行とFormsの回答参照 S3などを使うプレミアムコネクタは無料枠では試せず、試すだけの契約が可能かは購入経路ごとの確認が必要(公式の料金ページは年払い前提の表示)...&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⚙️ Power Automateで作る2つのフロー：SharePoint→Teams通知とForms→メール＋SharePoint記録のつまずきどころ</title>
+      <link>https://qiita.com/ip_technology/items/e776a96cbd5109f82cfe?via=curation</link>
+      <guid isPermaLink="true">https://qiita.com/ip_technology/items/e776a96cbd5109f82cfe?via=curation</guid>
+      <pubDate>Fri, 27 Nov 2026 01:57:08 +0000</pubDate>
+      <category>DX業務自動化</category>
+      <description>&lt;p&gt;&lt;b&gt;コメント:&lt;/b&gt; SharePointとTeams、Formsの連携フロー作成手順やつまずきポイントがわかり、M365の業務自動化を導入する場面で使える。&lt;/p&gt;&lt;p&gt;点数: 4/5 ／ 分野: DX業務自動化 ／ 情報元: qiita.com&lt;/p&gt;&lt;p&gt;この記事でわかること Microsoft 365(以下、M365)付帯の標準コネクタ(各サービスと接続する部品)だけで、次の2つのフロー(自動化の一連の処理)を作りました。構成と、つまずいた点を順に載せます。 SharePointに項目が追加されたらTeamsに通知する...&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【完了報告】2026.11.27 03:09　新規8件、チェック8件、通過0件、リクエスト1回</title>
       <link>https://yoshiken31.github.io/copilot-rss-curation/?run=2026-11-27T0309</link>
